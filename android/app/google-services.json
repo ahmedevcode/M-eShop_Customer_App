@@ -1,0 +1,43 @@
+{
+  "project_info": {
+    "project_number": "372013397182",
+    "project_id": "eShop.multivendor.customer",
+    "storage_bucket": "eShop.multivendor.customer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372013397182:android:e2f10ddfb40448a1b01aef",
+        "android_client_info": {
+          "package_name": "eShop.multivendor.customer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKOJ7RDofhj-lgq5tj_dpXZz6kv6LJY-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+     
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKOJ7RDofhj-lgq5tj_dpXZz6kv6LJY-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
