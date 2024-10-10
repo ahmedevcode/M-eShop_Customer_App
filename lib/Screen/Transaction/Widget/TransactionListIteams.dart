@@ -54,14 +54,14 @@ class ListIteamOfTransaction extends StatelessWidget {
                         style: TextStyle(
                           color: Theme.of(context).colorScheme.fontColor,
                           fontWeight: FontWeight.bold,
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                         ),
                       ),
                     ),
                     Text(
                       transactionModelData[index].date!,
                       style: const TextStyle(
-                        fontFamily: 'ubuntu',
+                        fontFamily: 'Tajawal',
                       ),
                     ),
                   ],
@@ -76,7 +76,7 @@ class ListIteamOfTransaction extends StatelessWidget {
                         child: Text(
                           '${getTranslated(context, 'ORDER_ID_LBL')} : ${transactionModelData[index].orderId!}',
                           style: const TextStyle(
-                            fontFamily: 'ubuntu',
+                            fontFamily: 'Tajawal',
                           ),
                         ),
                       ),
@@ -97,7 +97,7 @@ class ListIteamOfTransaction extends StatelessWidget {
                               transactionModelData[index].status!),
                           style: TextStyle(
                             color: Theme.of(context).colorScheme.fontColor,
-                            fontFamily: 'ubuntu',
+                            fontFamily: 'Tajawal',
                           ),
                         ),
                       )
@@ -108,7 +108,7 @@ class ListIteamOfTransaction extends StatelessWidget {
                     ? Text(
                         '${getTranslated(context, 'PAYMENT_METHOD_LBL')} : ${transactionModelData[index].type!}',
                         style: const TextStyle(
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                         ),
                       )
                     : const SizedBox(),
@@ -118,7 +118,7 @@ class ListIteamOfTransaction extends StatelessWidget {
                       ? Text(
                           '${getTranslated(context, 'MSG')} : ${transactionModelData[index].msg!}',
                           style: const TextStyle(
-                            fontFamily: 'ubuntu',
+                            fontFamily: 'Tajawal',
                           ),
                         )
                       : const SizedBox(),

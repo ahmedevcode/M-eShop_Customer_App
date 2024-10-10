@@ -182,7 +182,7 @@ class _AttachIteamState extends State<AttachIteam> {
                       child: Text(
                         widget.message.date!,
                         style: TextStyle(
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                           color: Theme.of(context).colorScheme.lightBlack,
                           fontSize: textFontSize9,
                         ),

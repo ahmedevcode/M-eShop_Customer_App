@@ -339,7 +339,7 @@ class StateFaqsProduct extends State<FaqsProduct>
                               Text(
                                 'Q: ${context.read<ProductDetailProvider>().faqsProductList[index].question!}',
                                 style: TextStyle(
-                                  fontFamily: 'ubuntu',
+                                  fontFamily: 'Tajawal',
                                   fontWeight: FontWeight.bold,
                                   color:
                                       Theme.of(context).colorScheme.fontColor,
@@ -351,7 +351,7 @@ class StateFaqsProduct extends State<FaqsProduct>
                                 child: Text(
                                   'A: ${context.read<ProductDetailProvider>().faqsProductList[index].answer!}',
                                   style: TextStyle(
-                                    fontFamily: 'ubuntu',
+                                    fontFamily: 'Tajawal',
                                     color: Theme.of(context)
                                         .colorScheme
                                         .lightBlack,
@@ -371,7 +371,7 @@ class StateFaqsProduct extends State<FaqsProduct>
                                         .colorScheme
                                         .lightBlack2,
                                     fontSize: textFontSize11,
-                                    fontFamily: 'ubuntu',
+                                    fontFamily: 'Tajawal',
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
@@ -404,7 +404,7 @@ class StateFaqsProduct extends State<FaqsProduct>
                                               .withOpacity(0.5),
                                           fontSize: 10,
                                           fontWeight: FontWeight.bold,
-                                          fontFamily: 'ubuntu',
+                                          fontFamily: 'Tajawal',
                                         ),
                                       ),
                                     ),

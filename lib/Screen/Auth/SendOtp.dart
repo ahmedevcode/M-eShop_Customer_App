@@ -188,7 +188,7 @@ class _SendOtpState extends State<SendOtp> with TickerProviderStateMixin {
         style: Theme.of(context).textTheme.titleSmall!.copyWith(
               color: Theme.of(context).colorScheme.fontColor.withOpacity(0.4),
               fontWeight: FontWeight.bold,
-              fontFamily: 'ubuntu',
+              fontFamily: 'Tajawal',
             ),
         overflow: TextOverflow.ellipsis,
         softWrap: true,
@@ -198,7 +198,8 @@ class _SendOtpState extends State<SendOtp> with TickerProviderStateMixin {
   }
 
   setCodeWithMono() {
-    print("defaultCountryCode--${context.read<AppSettingsCubit>().getDefaultCountryCode()}");
+    print(
+        "defaultCountryCode--${context.read<AppSettingsCubit>().getDefaultCountryCode()}");
     return Padding(
         padding: const EdgeInsets.only(top: 45),
         child: Theme(
@@ -240,7 +241,8 @@ class _SendOtpState extends State<SendOtp> with TickerProviderStateMixin {
                   getTranslated(context, 'MOB_REQUIRED'),
                   getTranslated(context, 'VALID_MOB'));
             },
-            initialCountryCode: context.read<AppSettingsCubit>().getDefaultCountryCode(),
+            initialCountryCode:
+                context.read<AppSettingsCubit>().getDefaultCountryCode(),
             onSaved: (phoneNumber) {
               setState(() {
                 countrycode =
@@ -618,7 +620,7 @@ class _SendOtpState extends State<SendOtp> with TickerProviderStateMixin {
             style: Theme.of(context).textTheme.titleSmall!.copyWith(
                   color: Theme.of(context).colorScheme.fontColor,
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
           ),
           InkWell(
@@ -630,7 +632,7 @@ class _SendOtpState extends State<SendOtp> with TickerProviderStateMixin {
               style: Theme.of(context).textTheme.titleSmall!.copyWith(
                     color: Theme.of(context).colorScheme.primary,
                     fontWeight: FontWeight.bold,
-                    fontFamily: 'ubuntu',
+                    fontFamily: 'Tajawal',
                   ),
             ),
           )
@@ -724,7 +726,7 @@ class _SendOtpState extends State<SendOtp> with TickerProviderStateMixin {
               color: Theme.of(context).colorScheme.fontColor,
               fontWeight: FontWeight.bold,
               fontSize: textFontSize23,
-              fontFamily: 'ubuntu',
+              fontFamily: 'Tajawal',
               letterSpacing: 0.8,
             ),
       ),

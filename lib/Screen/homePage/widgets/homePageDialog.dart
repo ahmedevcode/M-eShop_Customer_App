@@ -36,7 +36,7 @@ class HomePageDialog {
                   color: Theme.of(context).colorScheme.fontColor,
                   fontWeight: FontWeight.normal,
                   fontSize: textFontSize16,
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
               ),
               content: Column(
@@ -62,7 +62,7 @@ class HomePageDialog {
                       color: Theme.of(context).colorScheme.fontColor,
                       fontWeight: FontWeight.normal,
                       fontSize: textFontSize12,
-                      fontFamily: 'ubuntu',
+                      fontFamily: 'Tajawal',
                     ),
                   )
                 ],
@@ -256,7 +256,7 @@ class HomePageDialog {
               getTranslated(context, 'UPDATE_AVAIL'),
               style: Theme.of(context).textTheme.titleMedium!.copyWith(
                     color: Theme.of(context).colorScheme.fontColor,
-                    fontFamily: 'ubuntu',
+                    fontFamily: 'Tajawal',
                   ),
             ),
             actions: <Widget>[
@@ -266,7 +266,7 @@ class HomePageDialog {
                   style: Theme.of(context).textTheme.titleSmall!.copyWith(
                         color: Theme.of(context).colorScheme.lightBlack,
                         fontWeight: FontWeight.bold,
-                        fontFamily: 'ubuntu',
+                        fontFamily: 'Tajawal',
                       ),
                 ),
                 onPressed: () {
@@ -279,7 +279,7 @@ class HomePageDialog {
                   style: Theme.of(context).textTheme.titleSmall!.copyWith(
                         color: Theme.of(context).colorScheme.fontColor,
                         fontWeight: FontWeight.bold,
-                        fontFamily: 'ubuntu',
+                        fontFamily: 'Tajawal',
                       ),
                 ),
                 onPressed: () async {

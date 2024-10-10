@@ -65,7 +65,7 @@ class _GetImageFieldState extends State<GetImageField> {
                       style: TextStyle(
                         color: Theme.of(context).colorScheme.lightBlack,
                         fontSize: textFontSize11,
-                        fontFamily: 'ubuntu',
+                        fontFamily: 'Tajawal',
                       ),
                     )
                   ],
@@ -221,7 +221,8 @@ Widget writeReviewLabel(BuildContext context) {
       getTranslated(context, 'REVIEW_OPINION'),
       textAlign: TextAlign.center,
       style: Theme.of(context).textTheme.titleMedium!.copyWith(
-          fontFamily: 'ubuntu', color: Theme.of(context).colorScheme.fontColor),
+          fontFamily: 'Tajawal',
+          color: Theme.of(context).colorScheme.fontColor),
     ),
   );
 }
@@ -277,7 +278,9 @@ Widget sendReviewButton(OrderItem orderItem, BuildContext context,
     children: [
       Expanded(
         child: Padding(
-          padding: Platform.isIOS ? const EdgeInsets.symmetric(horizontal: 15.0, vertical: 18.0) : const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8.0),
+          padding: Platform.isIOS
+              ? const EdgeInsets.symmetric(horizontal: 15.0, vertical: 18.0)
+              : const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8.0),
           child: MaterialButton(
             height: 45.0,
             textColor: Theme.of(context).colorScheme.white,
@@ -328,7 +331,7 @@ Widget sendReviewButton(OrderItem orderItem, BuildContext context,
                   ? getTranslated(context, 'UPDATE_REVIEW_LBL')
                   : getTranslated(context, 'SEND_REVIEW'),
               style: const TextStyle(
-                fontFamily: 'ubuntu',
+                fontFamily: 'Tajawal',
               ),
             ),
           ),
@@ -344,7 +347,7 @@ Text getHeading(String title, BuildContext context) {
     style: Theme.of(context).textTheme.titleLarge!.copyWith(
           fontWeight: FontWeight.bold,
           color: Theme.of(context).colorScheme.fontColor,
-          fontFamily: 'ubuntu',
+          fontFamily: 'Tajawal',
         ),
   );
 }

@@ -543,7 +543,7 @@ class _ListIteamListWidgetState extends State<ListIteamListWidget> {
                                               color: Theme.of(context)
                                                   .colorScheme
                                                   .fontColor,
-                                              fontFamily: 'ubuntu',
+                                              fontFamily: 'Tajawal',
                                               // fontWeight: FontWeight.w400,
                                               // fontStyle: FontStyle.normal,
                                               fontSize: textFontSize12),
@@ -589,7 +589,7 @@ class _ListIteamListWidgetState extends State<ListIteamListWidget> {
                                                 color: Theme.of(context)
                                                     .colorScheme
                                                     .lightBlack,
-                                                fontFamily: 'ubuntu',
+                                                fontFamily: 'Tajawal',
                                                 decoration:
                                                     TextDecoration.lineThrough,
                                                 decorationColor:
@@ -705,7 +705,7 @@ class _ListIteamListWidgetState extends State<ListIteamListWidget> {
                                                                       FontWeight
                                                                           .normal,
                                                                   fontFamily:
-                                                                      'ubuntu',
+                                                                      'Tajawal',
                                                                 ),
                                                           ),
                                                         ),
@@ -871,7 +871,7 @@ class _ListIteamListWidgetState extends State<ListIteamListWidget> {
                                                                             .colorScheme
                                                                             .fontColor,
                                                                         fontFamily:
-                                                                            'ubuntu',
+                                                                            'Tajawal',
                                                                       ),
                                                                     ),
                                                                   );

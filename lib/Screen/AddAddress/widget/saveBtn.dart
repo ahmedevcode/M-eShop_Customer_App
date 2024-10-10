@@ -39,7 +39,7 @@ class SaveButtonWidget extends StatelessWidget {
                     style: const TextStyle(
                       color: colors.whiteTemp,
                       fontSize: textFontSize16,
-                      fontFamily: 'ubuntu',
+                      fontFamily: 'Tajawal',
                     ),
                   ),
                 ),

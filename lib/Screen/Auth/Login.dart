@@ -253,7 +253,7 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
                   color: Theme.of(context).colorScheme.fontColor,
                   fontWeight: FontWeight.normal,
                   fontSize: textFontSize16,
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
               ),
               content: Column(
@@ -283,7 +283,7 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
                             color: Theme.of(context).colorScheme.lightBlack,
                             fontSize: textFontSize15,
                             fontWeight: FontWeight.bold,
-                            fontFamily: 'ubuntu',
+                            fontFamily: 'Tajawal',
                           ),
                         ),
                         onPressed: () {
@@ -300,7 +300,7 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
                             color: colors.primary,
                             fontSize: textFontSize15,
                             fontWeight: FontWeight.bold,
-                            fontFamily: 'ubuntu',
+                            fontFamily: 'Tajawal',
                           ),
                         ),
                         onPressed: () {
@@ -386,7 +386,7 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
             style: Theme.of(context).textTheme.titleSmall!.copyWith(
                   color: colors.primary,
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
           ),
         ),
@@ -492,11 +492,7 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
     isNetworkAvail = await isNetworkAvailable();
     if (isNetworkAvail) {
       try {
-        var parameter = {
-          PRODUCT_VARIENT_ID: vid,
-          QTY: qty,
-          SAVE_LATER: '1'
-        };
+        var parameter = {PRODUCT_VARIENT_ID: vid, QTY: qty, SAVE_LATER: '1'};
         Response response =
             await post(manageCartApi, body: parameter, headers: headers)
                 .timeout(const Duration(seconds: timeOut));
@@ -521,10 +517,15 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
     }
   }
 
-  Widget backBotton(){
+  Widget backBotton() {
     return InkWell(
-      child: Icon(Icons.arrow_back_ios, color: Theme.of(context).colorScheme.black,),
-      onTap: (){Navigator.of(context).pop();},
+      child: Icon(
+        Icons.arrow_back_ios,
+        color: Theme.of(context).colorScheme.black,
+      ),
+      onTap: () {
+        Navigator.of(context).pop();
+      },
     );
   }
 
@@ -540,7 +541,7 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
               fontWeight: FontWeight.bold,
               fontSize: textFontSize20,
               letterSpacing: 0.8,
-              fontFamily: 'ubuntu',
+              fontFamily: 'Tajawal',
             ),
       ),
     );
@@ -556,7 +557,7 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
         style: Theme.of(context).textTheme.titleSmall!.copyWith(
               color: Theme.of(context).colorScheme.fontColor.withOpacity(0.38),
               fontWeight: FontWeight.bold,
-              fontFamily: 'ubuntu',
+              fontFamily: 'Tajawal',
             ),
       ),
     );
@@ -566,7 +567,6 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
     return Padding(
       padding: const EdgeInsets.only(top: 40),
       child: TextFormField(
-        
         onFieldSubmitted: (v) {
           FocusScope.of(context).requestFocus(passFocus);
         },
@@ -642,8 +642,8 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
           context.read<AuthenticationProvider>().setPassword(value);
         },
         decoration: InputDecoration(
-          prefixIcon: Icon(Icons.lock),
-          prefixIconColor: Theme.of(context).colorScheme.black,
+            prefixIcon: Icon(Icons.lock),
+            prefixIconColor: Theme.of(context).colorScheme.black,
             contentPadding: const EdgeInsets.symmetric(
               horizontal: 13,
               vertical: 5,
@@ -704,10 +704,13 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
             child: Text(
               getTranslated(context, 'FORGOT_PASSWORD_LBL'),
               style: Theme.of(context).textTheme.titleSmall!.copyWith(
-                    color: Theme.of(context).colorScheme.fontColor.withOpacity(0.6),
+                    color: Theme.of(context)
+                        .colorScheme
+                        .fontColor
+                        .withOpacity(0.6),
                     fontWeight: FontWeight.bold,
                     fontSize: textFontSize13,
-                    fontFamily: 'ubuntu',
+                    fontFamily: 'Tajawal',
                   ),
             ),
           ),
@@ -899,15 +902,18 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
                     alignment: Alignment.center,
                     // width: deviceWidth! * 0.7,
                     decoration: BoxDecoration(
-                       color: Theme.of(context).colorScheme.white,
-                       boxShadow:  [
-                        BoxShadow(
-                          color: Theme.of(context).colorScheme.white.withOpacity(0.5),
-                          blurRadius: 9.0,
-                          spreadRadius: 2
-                        ),],
-                      borderRadius:
-                          BorderRadius.circular(circularBorderRadius50)),
+                        color: Theme.of(context).colorScheme.white,
+                        boxShadow: [
+                          BoxShadow(
+                              color: Theme.of(context)
+                                  .colorScheme
+                                  .white
+                                  .withOpacity(0.5),
+                              blurRadius: 9.0,
+                              spreadRadius: 2),
+                        ],
+                        borderRadius:
+                            BorderRadius.circular(circularBorderRadius50)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -960,21 +966,28 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
               if (Platform.isIOS &&
                   context.read<AppSettingsCubit>().isAppleLoginAllowed())
                 CupertinoButton(
-                  padding: EdgeInsetsDirectional.only(top: 15, start: 0, end: 0,),
+                  padding: EdgeInsetsDirectional.only(
+                    top: 15,
+                    start: 0,
+                    end: 0,
+                  ),
                   child: Container(
                     height: 50,
                     alignment: Alignment.center,
                     // width: deviceWidth! * 0.7,
                     decoration: BoxDecoration(
-                       color: Theme.of(context).colorScheme.white,
-                       boxShadow:  [
-                        BoxShadow(
-                          color: Theme.of(context).colorScheme.white.withOpacity(0.5),
-                          blurRadius: 9.0,
-                          spreadRadius: 2
-                        ),],
-                      borderRadius:
-                          BorderRadius.circular(circularBorderRadius50)),
+                        color: Theme.of(context).colorScheme.white,
+                        boxShadow: [
+                          BoxShadow(
+                              color: Theme.of(context)
+                                  .colorScheme
+                                  .white
+                                  .withOpacity(0.5),
+                              blurRadius: 9.0,
+                              spreadRadius: 2),
+                        ],
+                        borderRadius:
+                            BorderRadius.circular(circularBorderRadius50)),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -984,8 +997,7 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
                           width: 22,
                         ),
                         Padding(
-                          padding:
-                              const EdgeInsetsDirectional.only(start: 15),
+                          padding: const EdgeInsetsDirectional.only(start: 15),
                           child: Text(
                               getTranslated(context, 'CONTINUE_WITH_APPLE'),
                               style: Theme.of(context)
@@ -1041,7 +1053,7 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
             style: Theme.of(context).textTheme.titleSmall!.copyWith(
                   color: Theme.of(context).colorScheme.fontColor,
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
           ),
           InkWell(
@@ -1059,7 +1071,7 @@ class _LoginPageState extends State<Login> with TickerProviderStateMixin {
               style: Theme.of(context).textTheme.titleSmall!.copyWith(
                     color: Theme.of(context).colorScheme.primary,
                     fontWeight: FontWeight.bold,
-                    fontFamily: 'ubuntu',
+                    fontFamily: 'Tajawal',
                   ),
             ),
           )

@@ -53,7 +53,7 @@ class _MessageIteamState extends State<MessageIteam> {
                         style: const TextStyle(
                           color: colors.primary,
                           fontSize: textFontSize12,
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                         ),
                       ),
                     )
@@ -117,7 +117,7 @@ class _MessageIteamState extends State<MessageIteam> {
                               .chatList[widget.index]
                               .date!,
                           style: TextStyle(
-                            fontFamily: 'ubuntu',
+                            fontFamily: 'Tajawal',
                             color: Theme.of(context).colorScheme.lightBlack,
                             fontSize: textFontSize9,
                           ),

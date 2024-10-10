@@ -179,12 +179,14 @@ class SectionHeadingContainer extends StatelessWidget {
             style: TextStyle(
               fontWeight: FontWeight.w500,
               fontStyle: FontStyle.normal,
-              fontFamily: 'ubuntu',
+              fontFamily: 'Tajawal',
               fontSize: textFontSize16,
               color: Theme.of(context).colorScheme.fontColor,
             ),
           ),
-          const SizedBox(height: 5,),
+          const SizedBox(
+            height: 5,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -194,7 +196,7 @@ class SectionHeadingContainer extends StatelessWidget {
                   subTitle,
                   style: TextStyle(
                       fontSize: textFontSize12,
-                      fontFamily: 'ubuntu',
+                      fontFamily: 'Tajawal',
                       fontWeight: FontWeight.w400,
                       fontStyle: FontStyle.normal,
                       color: Theme.of(context).colorScheme.lightBlack),
@@ -211,7 +213,7 @@ class SectionHeadingContainer extends StatelessWidget {
                           fontSize: textFontSize12,
                           fontWeight: FontWeight.w400,
                           fontStyle: FontStyle.normal,
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                         ),
                   ),
                   onTap: () {

@@ -125,7 +125,7 @@ class StatePreview extends State<ReviewPreview> {
                                           model!.comment ?? '',
                                           style: const TextStyle(
                                             color: Colors.white,
-                                            fontFamily: 'ubuntu',
+                                            fontFamily: 'Tajawal',
                                           ),
                                           maxLines: flag ? 2 : null,
                                           overflow: TextOverflow.ellipsis,
@@ -157,7 +157,7 @@ class StatePreview extends State<ReviewPreview> {
                                     model!.date ?? '',
                                     style: const TextStyle(
                                       color: Colors.white,
-                                      fontFamily: 'ubuntu',
+                                      fontFamily: 'Tajawal',
                                       fontSize: textFontSize11,
                                     ),
                                   )

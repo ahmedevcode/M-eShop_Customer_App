@@ -317,7 +317,7 @@ class _MyAppState extends State<MyApp> {
               ),
           primarySwatch: colors.primary_app,
           primaryColor: Theme.of(context).colorScheme.lightWhite,
-          fontFamily: 'ubuntu',
+          fontFamily: 'Tajawal',
           brightness: Brightness.light,
           textTheme: TextTheme(
             titleLarge: TextStyle(
@@ -353,7 +353,7 @@ class _MyAppState extends State<MyApp> {
             selectionColor: colors.darkIcon,
             selectionHandleColor: colors.darkIcon,
           ),
-          fontFamily: 'Kagwal',
+          fontFamily: 'Tajawal',
           brightness: Brightness.dark,
           hintColor: colors.white10,
           iconTheme: Theme.of(context).iconTheme.copyWith(

@@ -36,7 +36,6 @@ class _FaqsListState extends State<FaqsList> with TickerProviderStateMixin {
     super.initState();
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,7 +51,7 @@ class _FaqsListState extends State<FaqsList> with TickerProviderStateMixin {
               child: Text(
                 value.errorMessage,
                 style: const TextStyle(
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
               ),
             );
@@ -109,7 +108,7 @@ class _FaqsListState extends State<FaqsList> with TickerProviderStateMixin {
                     faqsList[index].question!,
                     style: Theme.of(context).textTheme.titleMedium!.copyWith(
                           color: Theme.of(context).colorScheme.lightBlack,
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                         ),
                   )),
               selectedIndex != index || flag
@@ -127,7 +126,7 @@ class _FaqsListState extends State<FaqsList> with TickerProviderStateMixin {
                                   .textTheme
                                   .titleSmall!
                                   .copyWith(
-                                    fontFamily: 'ubuntu',
+                                    fontFamily: 'Tajawal',
                                     color: Theme.of(context)
                                         .colorScheme
                                         .black
@@ -155,7 +154,7 @@ class _FaqsListState extends State<FaqsList> with TickerProviderStateMixin {
                                   .textTheme
                                   .titleSmall!
                                   .copyWith(
-                                    fontFamily: 'ubuntu',
+                                    fontFamily: 'Tajawal',
                                     color: Theme.of(context)
                                         .colorScheme
                                         .black

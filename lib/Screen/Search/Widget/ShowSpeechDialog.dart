@@ -27,7 +27,7 @@ showSpeechDialog(
               color: Theme.of(context).colorScheme.fontColor,
               fontWeight: FontWeight.bold,
               fontSize: textFontSize16,
-              fontFamily: 'ubuntu',
+              fontFamily: 'Tajawal',
             ),
             textAlign: TextAlign.center,
           ),
@@ -81,7 +81,7 @@ showSpeechDialog(
                               .copyWith(
                                 color: Theme.of(context).colorScheme.fontColor,
                                 fontWeight: FontWeight.bold,
-                                fontFamily: 'ubuntu',
+                                fontFamily: 'Tajawal',
                               ),
                         )
                       : Text(
@@ -92,7 +92,7 @@ showSpeechDialog(
                               .copyWith(
                                 color: Theme.of(context).colorScheme.fontColor,
                                 fontWeight: FontWeight.bold,
-                                fontFamily: 'ubuntu',
+                                fontFamily: 'Tajawal',
                               ),
                         ),
                 ),

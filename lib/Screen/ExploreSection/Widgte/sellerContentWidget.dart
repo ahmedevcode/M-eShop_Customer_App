@@ -36,13 +36,13 @@ class ShowContentOfSellers extends StatelessWidget {
                   color: Theme.of(context).colorScheme.white,
                   child: ListTile(
                     title: Padding(
-                      padding: const EdgeInsets.only(bottom:  8.0),
+                      padding: const EdgeInsets.only(bottom: 8.0),
                       child: Text(
                         sellerList[index].store_name!,
                         style: Theme.of(context).textTheme.titleSmall!.copyWith(
                               color: Theme.of(context).colorScheme.lightBlack,
                               fontWeight: FontWeight.bold,
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
@@ -63,23 +63,23 @@ class ShowContentOfSellers extends StatelessWidget {
                         ),
                         Text(
                           ' ${sellerList[index].seller_rating!}',
-                           style: const TextStyle(
-                              fontWeight: FontWeight.w400,
-                              fontStyle: FontStyle.normal,
-                              fontSize: textFontSize13,
-                              fontFamily: 'ubuntu',
-                            ),
+                          style: const TextStyle(
+                            fontWeight: FontWeight.w400,
+                            fontStyle: FontStyle.normal,
+                            fontSize: textFontSize13,
+                            fontFamily: 'Tajawal',
+                          ),
                         ),
                         Text(
                           ' | ${sellerList[index].noOfRatingsOnSeller!}',
-                           style: const TextStyle(
-                              fontWeight: FontWeight.w400,
-                              fontStyle: FontStyle.normal,
-                              fontSize: textFontSize13,
-                              fontFamily: 'ubuntu',
-                            ),
+                          style: const TextStyle(
+                            fontWeight: FontWeight.w400,
+                            fontStyle: FontStyle.normal,
+                            fontSize: textFontSize13,
+                            fontFamily: 'Tajawal',
+                          ),
                         ),
-                    
+
                         // Expanded(
                         //   child: StarRating(
                         //       noOfRatings:
@@ -94,7 +94,7 @@ class ShowContentOfSellers extends StatelessWidget {
                               fontWeight: FontWeight.w400,
                               fontStyle: FontStyle.normal,
                               fontSize: textFontSize14,
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                             overflow: TextOverflow.ellipsis,
                           ),
@@ -102,7 +102,8 @@ class ShowContentOfSellers extends StatelessWidget {
                       ],
                     ),
                     leading: ClipRRect(
-                      borderRadius: BorderRadius.circular(circularBorderRadius7),
+                      borderRadius:
+                          BorderRadius.circular(circularBorderRadius7),
                       child: sellerList[index].seller_profile == ''
                           ? SvgPicture.asset(
                               DesignConfiguration.setSvgPath('placeholder'),
@@ -177,7 +178,7 @@ class ShowContentOfSellers extends StatelessWidget {
                       child: Text(
                         getTranslated(context, 'No Seller/Store Found'),
                         style: const TextStyle(
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                         ),
                       ),
                     )

@@ -212,7 +212,7 @@ class StateMyOrder extends State<MyOrder> with TickerProviderStateMixin {
                                   child: Text(
                                     getTranslated(context, 'noItem'),
                                     style: const TextStyle(
-                                      fontFamily: 'ubuntu',
+                                      fontFamily: 'Tajawal',
                                     ),
                                   ),
                                 )
@@ -271,7 +271,7 @@ class StateMyOrder extends State<MyOrder> with TickerProviderStateMixin {
                             child: Text(
                               value.errorMessage,
                               style: const TextStyle(
-                                fontFamily: 'ubuntu',
+                                fontFamily: 'Tajawal',
                               ),
                             ),
                           );

@@ -82,7 +82,7 @@ class RadioItem extends StatelessWidget {
                                         _item.name!,
                                         style: const TextStyle(
                                           fontWeight: FontWeight.bold,
-                                          fontFamily: 'ubuntu',
+                                          fontFamily: 'Tajawal',
                                         ),
                                         overflow: TextOverflow.ellipsis,
                                         softWrap: true,
@@ -97,7 +97,7 @@ class RadioItem extends StatelessWidget {
                                 child: Text(
                                   _item.add!,
                                   style: const TextStyle(
-                                    fontFamily: 'ubuntu',
+                                    fontFamily: 'Tajawal',
                                   ),
                                 ),
                               ),
@@ -114,7 +114,7 @@ class RadioItem extends StatelessWidget {
                                 getTranslated(context, 'EDIT'),
                                 style: const TextStyle(
                                   color: colors.primary,
-                                  fontFamily: 'ubuntu',
+                                  fontFamily: 'Tajawal',
                                 ),
                               ),
                             ),
@@ -128,7 +128,7 @@ class RadioItem extends StatelessWidget {
                                 textAlign: TextAlign.center,
                                 style: const TextStyle(
                                   color: colors.primary,
-                                  fontFamily: 'ubuntu',
+                                  fontFamily: 'Tajawal',
                                 ),
                               ),
                             ),

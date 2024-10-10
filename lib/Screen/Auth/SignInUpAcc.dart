@@ -41,7 +41,7 @@ class _SignInUpAccState extends State<SignInUpAcc> {
               color: Theme.of(context).colorScheme.fontColor,
               fontWeight: FontWeight.bold,
               fontSize: textFontSize20,
-              fontFamily: 'ubuntu',
+              fontFamily: 'Tajawal',
             ),
       ),
     );
@@ -58,7 +58,7 @@ class _SignInUpAccState extends State<SignInUpAcc> {
         style: Theme.of(context).textTheme.titleSmall!.copyWith(
               color: Theme.of(context).colorScheme.fontColor,
               fontWeight: FontWeight.normal,
-              fontFamily: 'ubuntu',
+              fontFamily: 'Tajawal',
             ),
       ),
     );
@@ -76,18 +76,18 @@ class _SignInUpAccState extends State<SignInUpAcc> {
               color: Theme.of(context).colorScheme.fontColor,
               fontSize: textFontSize16,
               fontWeight: FontWeight.bold,
-              fontFamily: 'ubuntu',
+              fontFamily: 'Tajawal',
             ),
       ),
     );
   }
 
-  onTapSignin(){
-        Routes.navigateToLoginScreen(
-          context,
-          isPop: false,
-        );
-      }
+  onTapSignin() {
+    Routes.navigateToLoginScreen(
+      context,
+      isPop: false,
+    );
+  }
 
   signInBtn() {
     return CupertinoButton(
@@ -110,7 +110,7 @@ class _SignInUpAccState extends State<SignInUpAcc> {
                 color: colors.primary,
                 fontWeight: FontWeight.bold,
                 fontSize: textFontSize15,
-                fontFamily: 'ubuntu',
+                fontFamily: 'Tajawal',
               ),
         ),
       ),
@@ -122,17 +122,16 @@ class _SignInUpAccState extends State<SignInUpAcc> {
       },
     );
   }
-  ontapRegister(){
-    Navigator.of(context).push(
-          CupertinoPageRoute(
-            builder: (BuildContext context) => SendOtp(
-              title: getTranslated(context, 'SEND_OTP_TITLE'),
-            ),
-          ),
-        );
-      
-  }
 
+  ontapRegister() {
+    Navigator.of(context).push(
+      CupertinoPageRoute(
+        builder: (BuildContext context) => SendOtp(
+          title: getTranslated(context, 'SEND_OTP_TITLE'),
+        ),
+      ),
+    );
+  }
 
   createAccBtn() {
     return CupertinoButton(
@@ -156,7 +155,7 @@ class _SignInUpAccState extends State<SignInUpAcc> {
                 color: colors.whiteTemp,
                 fontWeight: FontWeight.bold,
                 fontSize: textFontSize15,
-                fontFamily: 'ubuntu',
+                fontFamily: 'Tajawal',
               ),
         ),
       ),
@@ -171,7 +170,10 @@ class _SignInUpAccState extends State<SignInUpAcc> {
       },
     );
   }
-  onTaskip(){Navigator.pushNamedAndRemoveUntil(context, '/home', (r) => false);}
+
+  onTaskip() {
+    Navigator.pushNamedAndRemoveUntil(context, '/home', (r) => false);
+  }
 
   skipSignInBtn() {
     return Container(
@@ -194,7 +196,7 @@ class _SignInUpAccState extends State<SignInUpAcc> {
             style: Theme.of(context).textTheme.titleSmall!.copyWith(
                   color: colors.primary,
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
           ),
         ),
@@ -233,10 +235,24 @@ class _SignInUpAccState extends State<SignInUpAcc> {
             welcomeEshopTxt(),
             eCommerceforBusinessTxt(),
             signinlable(),
-            SizedBox(height: 20,),
-            LoginButtons( label: 'Sign in', textColour: colors.whiteTemp, boxColor: Theme.of(context).colorScheme.primary, onpressfunction: onTapSignin),
-            LoginButtons(label: 'Register', textColour: Theme.of(context).colorScheme.primary, boxColor: colors.whiteTemp, onpressfunction: ontapRegister),
-            LoginButtons( label: 'SKIP_SIGNIN_LBL', textColour: Theme.of(context).colorScheme.primary, boxColor: colors.whiteTemp, onpressfunction: onTaskip),
+            SizedBox(
+              height: 20,
+            ),
+            LoginButtons(
+                label: 'Sign in',
+                textColour: colors.whiteTemp,
+                boxColor: Theme.of(context).colorScheme.primary,
+                onpressfunction: onTapSignin),
+            LoginButtons(
+                label: 'Register',
+                textColour: Theme.of(context).colorScheme.primary,
+                boxColor: colors.whiteTemp,
+                onpressfunction: ontapRegister),
+            LoginButtons(
+                label: 'SKIP_SIGNIN_LBL',
+                textColour: Theme.of(context).colorScheme.primary,
+                boxColor: colors.whiteTemp,
+                onpressfunction: onTaskip),
             // bottomBtn()
           ],
         ),

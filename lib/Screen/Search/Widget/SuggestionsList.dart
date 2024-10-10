@@ -44,7 +44,7 @@ class SuggestionList extends StatelessWidget {
             style: Theme.of(context).textTheme.titleSmall!.copyWith(
                   color: Theme.of(context).colorScheme.lightBlack,
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
@@ -56,7 +56,7 @@ class SuggestionList extends StatelessWidget {
                   'In ${suggestion.catName!}',
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.fontColor,
-                    fontFamily: 'ubuntu',
+                    fontFamily: 'Tajawal',
                   ),
                 ),
           leading: textController!.text.toString().trim().isEmpty ||

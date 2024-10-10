@@ -520,7 +520,6 @@ class DashboardPageState extends State<Dashboard>
                 child: selBottom == selectedIndex
                     ? Lottie.asset(
                         DesignConfiguration.setLottiePath(enabledImage),
-                        repeat: false,
                         height: 25,
                       )
                     : SvgPicture.asset(
@@ -539,10 +538,10 @@ class DashboardPageState extends State<Dashboard>
                   color: selBottom == selectedIndex
                       ? Theme.of(context).colorScheme.fontColor
                       : Theme.of(context).colorScheme.lightBlack,
-                  fontWeight: FontWeight.w400,
+                  fontWeight: FontWeight.bold,
                   fontStyle: FontStyle.normal,
                   fontSize: textFontSize11,
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
                 textAlign: TextAlign.center,
                 maxLines: 1,
@@ -648,7 +647,8 @@ class DashboardPageState extends State<Dashboard>
                                 child: Container(
                                     decoration: const BoxDecoration(
                                         shape: BoxShape.circle,
-                                        color: colors.primary),
+                                        color:
+                                            Color.fromARGB(255, 23, 212, 51)),
                                     child: Center(
                                       child: Padding(
                                         padding: const EdgeInsets.all(3),

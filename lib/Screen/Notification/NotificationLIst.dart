@@ -108,7 +108,7 @@ class StateNoti extends State<NotificationList> with TickerProviderStateMixin {
                     child: Text(
                       value.errorMessage,
                       style: const TextStyle(
-                        fontFamily: 'ubuntu',
+                        fontFamily: 'Tajawal',
                       ),
                     ),
                   );
@@ -132,7 +132,7 @@ class StateNoti extends State<NotificationList> with TickerProviderStateMixin {
               child: Text(
                 getTranslated(context, 'noNoti'),
                 style: const TextStyle(
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
               ),
             ),

@@ -139,7 +139,7 @@ class _LoginPageState extends State<SetPass> with TickerProviderStateMixin {
                 fontWeight: FontWeight.bold,
                 fontSize: textFontSize23,
                 letterSpacing: 0.8,
-                fontFamily: 'ubuntu',
+                fontFamily: 'Tajawal',
               ),
         ),
       ),

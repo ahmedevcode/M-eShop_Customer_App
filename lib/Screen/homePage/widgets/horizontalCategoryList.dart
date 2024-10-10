@@ -82,8 +82,12 @@ class HorizontalCategoryList extends StatelessWidget {
                                 mainAxisSize: MainAxisSize.min,
                                 children: <Widget>[
                                   Container(
-                                    decoration: const BoxDecoration(
-                                        shape: BoxShape.circle),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(
+                                          15), // Rounded corners with 15px
+                                      color: Colors.black
+                                          .withOpacity(0.15), // Opacity of 0.15
+                                    ),
                                     clipBehavior: Clip.antiAlias,
                                     child: DesignConfiguration
                                         .getCacheNotworkImage(
@@ -107,7 +111,7 @@ class HorizontalCategoryList extends StatelessWidget {
                                             .textTheme
                                             .bodySmall!
                                             .copyWith(
-                                              fontFamily: 'ubuntu',
+                                              fontFamily: 'Tajawal',
                                               color: Theme.of(context)
                                                   .colorScheme
                                                   .fontColor,
@@ -144,8 +148,9 @@ class HorizontalCategoryList extends StatelessWidget {
                     (_) => Container(
                       margin: const EdgeInsets.symmetric(horizontal: 10),
                       decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.white,
-                        shape: BoxShape.circle,
+                        color: Colors.black.withOpacity(0.15),
+                        borderRadius: BorderRadius.circular(
+                            15), // Rounded corners for loading skeleton
                       ),
                       width: 50.0,
                       height: 50.0,

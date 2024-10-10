@@ -176,7 +176,7 @@ class _AllCategoryState extends State<AllCategory>
                                                   .textTheme
                                                   .bodySmall!
                                                   .copyWith(
-                                                    fontFamily: 'ubuntu',
+                                                    fontFamily: 'Tajawal',
                                                     color: data == index
                                                         ? colors.primary
                                                         : Theme.of(context)
@@ -257,7 +257,7 @@ class _AllCategoryState extends State<AllCategory>
                                                   .textTheme
                                                   .bodySmall!
                                                   .copyWith(
-                                                    fontFamily: 'ubuntu',
+                                                    fontFamily: 'Tajawal',
                                                     color: data == index
                                                         ? colors.primary
                                                         : Theme.of(context)
@@ -342,7 +342,7 @@ class _AllCategoryState extends State<AllCategory>
                                               Text(
                                                 '${context.read<HomePageProvider>().catList[data].name!} ',
                                                 style: const TextStyle(
-                                                  fontFamily: 'ubuntu',
+                                                  fontFamily: 'Tajawal',
                                                 ),
                                               ),
                                               const Expanded(
@@ -358,7 +358,7 @@ class _AllCategoryState extends State<AllCategory>
                                             child: Text(
                                               '${getTranslated(context, 'All')} ${context.read<HomePageProvider>().catList[data].name!} ',
                                               style: TextStyle(
-                                                fontFamily: 'ubuntu',
+                                                fontFamily: 'Tajawal',
                                                 color: Theme.of(context)
                                                     .colorScheme
                                                     .fontColor,
@@ -440,7 +440,7 @@ class _AllCategoryState extends State<AllCategory>
                                                                 .bodySmall!
                                                                 .copyWith(
                                                                   fontFamily:
-                                                                      'ubuntu',
+                                                                      'Tajawal',
                                                                   color: Theme.of(
                                                                           context)
                                                                       .colorScheme
@@ -573,7 +573,7 @@ class _AllCategoryState extends State<AllCategory>
                                                 getTranslated(
                                                     context, 'noItem'),
                                                 style: const TextStyle(
-                                                  fontFamily: 'ubuntu',
+                                                  fontFamily: 'Tajawal',
                                                 ),
                                               ),
                                             );

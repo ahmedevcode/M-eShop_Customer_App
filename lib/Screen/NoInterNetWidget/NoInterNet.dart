@@ -30,7 +30,7 @@ class NoInterNet extends StatelessWidget {
       style: Theme.of(context).textTheme.headlineSmall!.copyWith(
             color: colors.primary,
             fontWeight: FontWeight.normal,
-            fontFamily: 'ubuntu',
+            fontFamily: 'Tajawal',
           ),
     );
   }
@@ -46,7 +46,7 @@ class NoInterNet extends StatelessWidget {
               color: Theme.of(context).colorScheme.lightBlack2,
               fontWeight: FontWeight.normal,
               fontSize: textFontSize15,
-              fontFamily: 'ubuntu',
+              fontFamily: 'Tajawal',
             ),
       ),
     );

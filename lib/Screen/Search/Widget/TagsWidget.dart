@@ -24,7 +24,7 @@ class TagsWidget extends StatelessWidget {
             style: TextStyle(
               color: Theme.of(context).colorScheme.white,
               fontSize: textFontSize11,
-              fontFamily: 'ubuntu',
+              fontFamily: 'Tajawal',
             ),
           ),
           backgroundColor: colors.primary,
@@ -68,7 +68,7 @@ class TagsWidget extends StatelessWidget {
                   child: Text(
                     getTranslated(context, 'Discover more'),
                     style: const TextStyle(
-                      fontFamily: 'ubuntu',
+                      fontFamily: 'Tajawal',
                     ),
                   ),
                 )

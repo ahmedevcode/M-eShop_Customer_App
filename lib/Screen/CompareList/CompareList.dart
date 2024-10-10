@@ -132,7 +132,7 @@ class _CompareListState extends State<CompareList> {
                   label: Text(
                     getTranslated(context, 'REMOVE'),
                     style: const TextStyle(
-                      fontFamily: 'ubuntu',
+                      fontFamily: 'Tajawal',
                     ),
                   ),
                 ),
@@ -174,8 +174,7 @@ class _CompareListState extends State<CompareList> {
                     ],
                   ),
                 ),
-                commanField(
-                    madeIn, getTranslated(context, 'MADE_IN'), context),
+                commanField(madeIn, getTranslated(context, 'MADE_IN'), context),
                 commanField(
                     warranty, getTranslated(context, 'WARRENTY'), context),
                 commanField(

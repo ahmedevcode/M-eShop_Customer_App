@@ -75,7 +75,7 @@ class _UserTransactionsState extends State<UserTransactions>
                 child: Text(
                   getTranslated(context, 'ERROR'),
                   style: const TextStyle(
-                    fontFamily: 'ubuntu',
+                    fontFamily: 'Tajawal',
                   ),
                 ),
               );

@@ -346,7 +346,7 @@ class _FullscreenPlayerState extends State<FullscreenPlayer> {
               title: Text(
                 ' ${elem.toString()} fps',
                 style: const TextStyle(
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
               ),
               onTap: () => {
@@ -489,7 +489,7 @@ class _FullscreenPlayerState extends State<FullscreenPlayer> {
                 child: Text(
                   '${value.position.inMinutes}:${value.position.inSeconds - value.position.inMinutes * 60}',
                   style: const TextStyle(
-                    fontFamily: 'ubuntu',
+                    fontFamily: 'Tajawal',
                   ),
                 ),
               ),
@@ -513,7 +513,7 @@ class _FullscreenPlayerState extends State<FullscreenPlayer> {
                 child: Text(
                   '${value.duration.inMinutes}:${value.duration.inSeconds - value.duration.inMinutes * 60}',
                   style: const TextStyle(
-                    fontFamily: 'ubuntu',
+                    fontFamily: 'Tajawal',
                   ),
                 ),
               ),

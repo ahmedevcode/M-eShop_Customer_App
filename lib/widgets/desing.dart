@@ -87,7 +87,7 @@ class DesignConfiguration {
       child: Text(
         getTranslated(context, 'noItem'),
         style: TextStyle(
-            fontFamily: 'ubuntu',
+            fontFamily: 'Tajawal',
             color: Theme.of(context).colorScheme.fontColor),
       ),
     );
@@ -140,7 +140,7 @@ class DesignConfiguration {
       // placeholderCacheHeight: 50,
       // imageCacheWidth: 50,
       image: imageurlString,
-      placeholder:  DesignConfiguration.setPngPath('placeholder'),
+      placeholder: DesignConfiguration.setPngPath('placeholder'),
       width: widthvalue,
       height: heightvalue,
       fit: boxFit,
@@ -204,7 +204,7 @@ class GetDicountLabel extends StatelessWidget {
           style: const TextStyle(
             color: colors.whiteTemp,
             fontWeight: FontWeight.bold,
-            fontFamily: 'ubuntu',
+            fontFamily: 'Tajawal',
             fontSize: textFontSize10,
           ),
         ),

@@ -106,7 +106,7 @@ class _CustomerSupportState extends State<CustomerSupport>
         );
   }
 
-  //TODO: customer support issue is here 
+  //TODO: customer support issue is here
   // @override
   // void dispose() {
   //   super.dispose();
@@ -203,8 +203,8 @@ class _CustomerSupportState extends State<CustomerSupport>
                                                 hint: SizedBox(
                                                   width: deviceWidth! * 0.6,
                                                   child: Text(
-                                                    getTranslated(context,
-                                                        'SELECT_TYPE'),
+                                                    getTranslated(
+                                                        context, 'SELECT_TYPE'),
                                                     style: Theme.of(context)
                                                         .textTheme
                                                         .titleSmall!
@@ -213,7 +213,7 @@ class _CustomerSupportState extends State<CustomerSupport>
                                                               Theme.of(context)
                                                                   .colorScheme
                                                                   .fontColor,
-                                                          fontFamily: 'ubuntu',
+                                                          fontFamily: 'Tajawal',
                                                           fontWeight:
                                                               FontWeight.normal,
                                                         ),
@@ -231,7 +231,7 @@ class _CustomerSupportState extends State<CustomerSupport>
                                                       .lightWhite,
                                                   contentPadding:
                                                       const EdgeInsets
-                                                              .symmetric(
+                                                          .symmetric(
                                                           vertical: 10,
                                                           horizontal: 10),
                                                   focusedBorder:
@@ -290,7 +290,7 @@ class _CustomerSupportState extends State<CustomerSupport>
                                                       child: Text(
                                                         user.title!,
                                                         style: const TextStyle(
-                                                          fontFamily: 'ubuntu',
+                                                          fontFamily: 'Tajawal',
                                                         ),
                                                       ),
                                                     );
@@ -556,7 +556,7 @@ class _CustomerSupportState extends State<CustomerSupport>
           style: Theme.of(context).textTheme.titleSmall!.copyWith(
                 color: Theme.of(context).colorScheme.fontColor,
                 fontWeight: FontWeight.normal,
-                fontFamily: 'ubuntu',
+                fontFamily: 'Tajawal',
               ),
         ),
         decoration: InputDecoration(
@@ -597,7 +597,7 @@ class _CustomerSupportState extends State<CustomerSupport>
               child: Text(
                 user.title!,
                 style: const TextStyle(
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
               ),
             );

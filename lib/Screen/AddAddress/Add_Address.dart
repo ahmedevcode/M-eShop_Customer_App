@@ -381,7 +381,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
               label: Text(
                 getTranslated(context, 'NAME_LBL'),
                 style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                      fontFamily: 'ubuntu',
+                      fontFamily: 'Tajawal',
                     ),
               ),
               fillColor: Theme.of(context).colorScheme.white,
@@ -433,7 +433,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
               label: Text(
                 getTranslated(context, 'MOBILEHINT_LBL'),
                 style: const TextStyle(
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
               ),
               fillColor: Theme.of(context).colorScheme.white,
@@ -482,7 +482,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
                                 .textTheme
                                 .titleMedium!
                                 .copyWith(
-                                  fontFamily: 'ubuntu',
+                                  fontFamily: 'Tajawal',
                                   color:
                                       Theme.of(context).colorScheme.fontColor,
                                 ),
@@ -666,7 +666,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
                             .textTheme
                             .titleMedium!
                             .copyWith(
-                                fontFamily: 'ubuntu',
+                                fontFamily: 'Tajawal',
                                 color: Theme.of(context).colorScheme.fontColor),
                       ),
                     ),
@@ -865,7 +865,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
                   child: Text(
                     provider.zipcodeSearchList[index].zipcode!,
                     style: Theme.of(context).textTheme.titleSmall!.copyWith(
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                         ),
                   ),
                 ),
@@ -923,7 +923,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
                   child: Text(
                     data.citySearchLIst[index].name!,
                     style: Theme.of(context).textTheme.titleSmall!.copyWith(
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                         ),
                   ),
                 ),
@@ -965,7 +965,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
                           getTranslated(context, 'CITYSELECT_LBL'),
                           style:
                               Theme.of(context).textTheme.bodySmall!.copyWith(
-                                    fontFamily: 'ubuntu',
+                                    fontFamily: 'Tajawal',
                                   ),
                         ),
                         Text(
@@ -982,7 +982,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
                                     null
                                 ? Theme.of(context).colorScheme.fontColor
                                 : Colors.grey,
-                            fontFamily: 'ubuntu',
+                            fontFamily: 'Tajawal',
                           ),
                         ),
                       ],
@@ -1061,7 +1061,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
                                       null
                                   ? Theme.of(context).colorScheme.fontColor
                                   : Colors.grey,
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                           ),
                         ],
@@ -1173,7 +1173,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
                     label: Text(
                       getTranslated(context, 'AREA_NAME_LBL'),
                       style: const TextStyle(
-                        fontFamily: 'ubuntu',
+                        fontFamily: 'Tajawal',
                       ),
                     ),
 
@@ -1235,7 +1235,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
                     label: Text(
                       getTranslated(context, 'ADDRESS_LBL'),
                       style: const TextStyle(
-                        fontFamily: 'ubuntu',
+                        fontFamily: 'Tajawal',
                       ),
                     ),
                     fillColor: Theme.of(context).colorScheme.white,
@@ -1367,7 +1367,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
                 label: Text(
                   getTranslated(context, 'PINCODEHINT_LBL'),
                   style: const TextStyle(
-                    fontFamily: 'ubuntu',
+                    fontFamily: 'Tajawal',
                   ),
                 ),
                 fillColor: Theme.of(context).colorScheme.white,
@@ -1475,7 +1475,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
               label: Text(
                 getTranslated(context, 'STATE_LBL'),
                 style: const TextStyle(
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
               ),
               fillColor: Theme.of(context).colorScheme.white,
@@ -1521,7 +1521,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
               label: Text(
                 getTranslated(context, 'COUNTRY_LBL'),
                 style: const TextStyle(
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
               ),
               fillColor: Theme.of(context).colorScheme.white,
@@ -1606,7 +1606,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
                     child: Text(
                       getTranslated(context, 'HOME_LBL'),
                       style: const TextStyle(
-                        fontFamily: 'ubuntu',
+                        fontFamily: 'Tajawal',
                       ),
                     ),
                   )
@@ -1649,7 +1649,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
                     child: Text(
                       getTranslated(context, 'OFFICE_LBL'),
                       style: const TextStyle(
-                        fontFamily: 'ubuntu',
+                        fontFamily: 'Tajawal',
                       ),
                     ),
                   )
@@ -1692,7 +1692,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
                     child: Text(
                       getTranslated(context, 'OTHER_LBL'),
                       style: const TextStyle(
-                        fontFamily: 'ubuntu',
+                        fontFamily: 'Tajawal',
                       ),
                     ),
                   )
@@ -1740,7 +1740,7 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
           style: Theme.of(context).textTheme.titleSmall!.copyWith(
                 color: Theme.of(context).colorScheme.lightBlack,
                 fontWeight: FontWeight.bold,
-                fontFamily: 'ubuntu',
+                fontFamily: 'Tajawal',
               ),
         ),
       ),
@@ -1777,9 +1777,8 @@ class StateAddress extends State<AddAddress> with TickerProviderStateMixin {
             ),
           ),
           Padding(
-            padding: 
-              const EdgeInsetsDirectional.all( 20),
-                // : const EdgeInsetsDirectional.only(bottom: 0),
+            padding: const EdgeInsetsDirectional.all(20),
+            // : const EdgeInsetsDirectional.only(bottom: 0),
             child: AppBtn(
               title: getTranslated(context, 'SAVE_LBL'),
               removeTopPadding: true,

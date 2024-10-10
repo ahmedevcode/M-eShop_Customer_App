@@ -57,6 +57,7 @@ const double circularBorderRadius5 = 5;
 const double circularBorderRadius7 = 7;
 const double circularBorderRadius8 = 8;
 const double circularBorderRadius10 = 10;
+const double circularBorderRadius15 = 15;
 const double circularBorderRadius20 = 20;
 const double circularBorderRadius25 = 25;
 const double circularBorderRadius30 = 30;

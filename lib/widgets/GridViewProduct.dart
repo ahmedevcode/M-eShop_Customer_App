@@ -516,7 +516,7 @@ class _GridViewProductListWidgetState extends State<GridViewProductListWidget> {
                                               .copyWith(
                                                 color: colors.red,
                                                 fontWeight: FontWeight.bold,
-                                                fontFamily: 'ubuntu',
+                                                fontFamily: 'Tajawal',
                                               ),
                                           textAlign: TextAlign.center,
                                         ),
@@ -566,7 +566,7 @@ class _GridViewProductListWidgetState extends State<GridViewProductListWidget> {
                                     fontSize: textFontSize12,
                                     fontWeight: FontWeight.w400,
                                     fontStyle: FontStyle.normal,
-                                    fontFamily: 'ubuntu',
+                                    fontFamily: 'Tajawal',
                                   ),
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
@@ -586,7 +586,7 @@ class _GridViewProductListWidgetState extends State<GridViewProductListWidget> {
                                     fontSize: textFontSize14,
                                     fontWeight: FontWeight.w700,
                                     fontStyle: FontStyle.normal,
-                                    fontFamily: 'ubuntu',
+                                    fontFamily: 'Tajawal',
                                   ),
                                 ),
                                 SizedBox(
@@ -607,7 +607,7 @@ class _GridViewProductListWidgetState extends State<GridViewProductListWidget> {
                                         color: Theme.of(context)
                                             .colorScheme
                                             .lightBlack,
-                                        fontFamily: 'ubuntu',
+                                        fontFamily: 'Tajawal',
                                         decoration: TextDecoration.lineThrough,
                                         decorationColor: colors.darkColor3,
                                         decorationStyle:
@@ -628,7 +628,7 @@ class _GridViewProductListWidgetState extends State<GridViewProductListWidget> {
                                             .textTheme
                                             .labelSmall!
                                             .copyWith(
-                                              fontFamily: 'ubuntu',
+                                              fontFamily: 'Tajawal',
                                               color: colors.green,
                                               letterSpacing: 0,
                                               fontSize: textFontSize9,
@@ -708,7 +708,7 @@ class _GridViewProductListWidgetState extends State<GridViewProductListWidget> {
                                                               textFontSize9,
                                                           fontWeight:
                                                               FontWeight.normal,
-                                                          fontFamily: 'ubuntu',
+                                                          fontFamily: 'Tajawal',
                                                         ),
                                                   ),
                                                 ),
@@ -866,7 +866,7 @@ class _GridViewProductListWidgetState extends State<GridViewProductListWidget> {
                                                                     .colorScheme
                                                                     .fontColor,
                                                                 fontFamily:
-                                                                    'ubuntu',
+                                                                    'Tajawal',
                                                               ),
                                                             ),
                                                           );

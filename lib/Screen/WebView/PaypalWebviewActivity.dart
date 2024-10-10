@@ -246,7 +246,7 @@ class StateWebViewClass extends State<WebViewClass> {
           appName,
           style: TextStyle(
             color: Theme.of(context).colorScheme.fontColor,
-            fontFamily: 'ubuntu',
+            fontFamily: 'Tajawal',
           ),
         ),
       ),
@@ -298,7 +298,7 @@ class StateWebViewClass extends State<WebViewClass> {
                         message,
                         style: TextStyle(
                           color: Theme.of(context).colorScheme.white,
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                         ),
                       ),
                     ),

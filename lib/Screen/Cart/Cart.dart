@@ -894,7 +894,7 @@ class StateCart extends State<Cart> with TickerProviderStateMixin {
                                                   color: Theme.of(context)
                                                       .colorScheme
                                                       .fontColor,
-                                                  fontFamily: 'ubuntu',
+                                                  fontFamily: 'Tajawal',
                                                 ),
                                           ),
                                         )
@@ -971,7 +971,7 @@ class StateCart extends State<Cart> with TickerProviderStateMixin {
                                                   color: Theme.of(context)
                                                       .colorScheme
                                                       .primary,
-                                                  fontFamily: 'ubuntu',
+                                                  fontFamily: 'Tajawal',
                                                 ),
                                           ),
                                         ],
@@ -1095,7 +1095,7 @@ class StateCart extends State<Cart> with TickerProviderStateMixin {
                                               color: Theme.of(context)
                                                   .colorScheme
                                                   .fontColor,
-                                              fontFamily: 'ubuntu',
+                                              fontFamily: 'Tajawal',
                                             ),
                                       ),
                                     ),
@@ -1272,7 +1272,7 @@ class StateCart extends State<Cart> with TickerProviderStateMixin {
                                                         color: Theme.of(context)
                                                             .colorScheme
                                                             .fontColor,
-                                                        fontFamily: 'ubuntu',
+                                                        fontFamily: 'Tajawal',
                                                       ),
                                                 ),
                                                 Text(
@@ -1289,7 +1289,7 @@ class StateCart extends State<Cart> with TickerProviderStateMixin {
                                                         color: Theme.of(context)
                                                             .colorScheme
                                                             .fontColor,
-                                                        fontFamily: 'ubuntu',
+                                                        fontFamily: 'Tajawal',
                                                       ),
                                                 ),
                                               ],
@@ -1326,13 +1326,13 @@ class StateCart extends State<Cart> with TickerProviderStateMixin {
                                                           .primary,
                                                       fontWeight:
                                                           FontWeight.bold,
-                                                      fontFamily: 'ubuntu',
+                                                      fontFamily: 'Tajawal',
                                                     ),
                                                   ),
                                                   Text(
                                                     '${context.read<CartProvider>().cartList.length} Items',
                                                     style: const TextStyle(
-                                                      fontFamily: 'ubuntu',
+                                                      fontFamily: 'Tajawal',
                                                     ),
                                                   ),
                                                 ],
@@ -1551,13 +1551,13 @@ class StateCart extends State<Cart> with TickerProviderStateMixin {
                                                       .colorScheme
                                                       .primary,
                                                   fontWeight: FontWeight.bold,
-                                                  fontFamily: 'ubuntu',
+                                                  fontFamily: 'Tajawal',
                                                 ),
                                               ),
                                               Text(
                                                 '${context.read<CartProvider>().cartList.length} Items',
                                                 style: const TextStyle(
-                                                  fontFamily: 'ubuntu',
+                                                  fontFamily: 'Tajawal',
                                                 ),
                                               ),
                                             ],
@@ -2904,7 +2904,7 @@ class StateCart extends State<Cart> with TickerProviderStateMixin {
                 Text(
                   getTranslated(context, 'Payment Done Successfully ...!'),
                   style: const TextStyle(
-                    fontFamily: 'ubuntu',
+                    fontFamily: 'Tajawal',
                   ),
                 ),
                 const SizedBox(
@@ -3354,7 +3354,7 @@ class StateCart extends State<Cart> with TickerProviderStateMixin {
                       color: Theme.of(context).colorScheme.lightBlack,
                       fontSize: textFontSize15,
                       fontWeight: FontWeight.bold,
-                      fontFamily: 'ubuntu',
+                      fontFamily: 'Tajawal',
                     ),
                   ),
                   onPressed: () {
@@ -3373,7 +3373,7 @@ class StateCart extends State<Cart> with TickerProviderStateMixin {
                       color: colors.primary,
                       fontSize: textFontSize15,
                       fontWeight: FontWeight.bold,
-                      fontFamily: 'ubuntu',
+                      fontFamily: 'Tajawal',
                     ),
                   ),
                   onPressed: () {
@@ -3424,7 +3424,7 @@ class StateCart extends State<Cart> with TickerProviderStateMixin {
                       color: Theme.of(context).colorScheme.lightBlack,
                       fontSize: textFontSize15,
                       fontWeight: FontWeight.bold,
-                      fontFamily: 'ubuntu',
+                      fontFamily: 'Tajawal',
                     ),
                   ),
                   onPressed: () {
@@ -3443,7 +3443,7 @@ class StateCart extends State<Cart> with TickerProviderStateMixin {
                       color: Theme.of(context).colorScheme.fontColor,
                       fontSize: textFontSize15,
                       fontWeight: FontWeight.bold,
-                      fontFamily: 'ubuntu',
+                      fontFamily: 'Tajawal',
                     ),
                   ),
                   onPressed: () {

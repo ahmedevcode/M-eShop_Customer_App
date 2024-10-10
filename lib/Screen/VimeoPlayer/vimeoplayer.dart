@@ -72,29 +72,29 @@ class _VimeoPlayerState extends State<VimeoPlayer> {
 
     _quality.getQualitiesSync().then(
       (value) {
-       if(value != null){
-        //TODO empty check + error handling and showing error instead of play error
-        _qualityValues = value;
-        _qualityValue = value[value.lastKey()];
-        
-        if (_controller != null && _controller!.value.isPlaying) {
-          _controller!.pause();
-        }
-        if(_qualityValue == null){
-          
-        }
-        _controller = VideoPlayerController.networkUrl(Uri.parse(_qualityValue));
-        _controller!.setLooping(looping!);
-        if (autoPlay!) _controller!.play();
-        initFuture = _controller!.initialize();
+        if (value != null) {
+          //TODO empty check + error handling and showing error instead of play error
+          _qualityValues = value;
+          _qualityValue = value[value.lastKey()];
 
-        setState(
-          () {
-            SystemChrome.setPreferredOrientations(
-              [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp],
-            );
-          },
-        );} else{
+          if (_controller != null && _controller!.value.isPlaying) {
+            _controller!.pause();
+          }
+          if (_qualityValue == null) {}
+          _controller =
+              VideoPlayerController.networkUrl(Uri.parse(_qualityValue));
+          _controller!.setLooping(looping!);
+          if (autoPlay!) _controller!.play();
+          initFuture = _controller!.initialize();
+
+          setState(
+            () {
+              SystemChrome.setPreferredOrientations(
+                [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp],
+              );
+            },
+          );
+        } else {
           setSnackbar(getTranslated(context, 'somethingMSg'), context);
         }
       },
@@ -296,7 +296,7 @@ class _VimeoPlayerState extends State<VimeoPlayer> {
               title: Text(
                 ' ${elem.toString()} fps',
                 style: const TextStyle(
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
               ),
               onTap: () => {
@@ -305,7 +305,8 @@ class _VimeoPlayerState extends State<VimeoPlayer> {
                   () {
                     _controller!.pause();
                     _qualityValue = value;
-                    _controller = VideoPlayerController.networkUrl(Uri.parse(_qualityValue));
+                    _controller = VideoPlayerController.networkUrl(
+                        Uri.parse(_qualityValue));
                     _controller!.setLooping(true);
                     _seek = true;
                     initFuture = _controller!.initialize();
@@ -492,7 +493,7 @@ class _VimeoPlayerState extends State<VimeoPlayer> {
                 child: Text(
                   '${value.position.inMinutes}:${value.position.inSeconds - value.position.inMinutes * 60}',
                   style: const TextStyle(
-                    fontFamily: 'ubuntu',
+                    fontFamily: 'Tajawal',
                   ),
                 ),
               ),
@@ -519,7 +520,7 @@ class _VimeoPlayerState extends State<VimeoPlayer> {
                 child: Text(
                   '${value.duration.inMinutes}:${value.duration.inSeconds - value.duration.inMinutes * 60}',
                   style: const TextStyle(
-                    fontFamily: 'ubuntu',
+                    fontFamily: 'Tajawal',
                   ),
                 ),
               ),

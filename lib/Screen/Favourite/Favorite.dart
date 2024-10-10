@@ -119,9 +119,7 @@ class StateFav extends State<Favorite> with TickerProviderStateMixin {
   void dispose() {
     buttonController!.dispose();
     controller.dispose();
-    for (int i = 0;
-        i < controllerText.length;
-        i++) {
+    for (int i = 0; i < controllerText.length; i++) {
       // controllerText[i].dispose();
     }
     super.dispose();
@@ -191,7 +189,7 @@ class StateFav extends State<Favorite> with TickerProviderStateMixin {
                     child: Text(
                       getTranslated(context, 'noFav'),
                       style: const TextStyle(
-                        fontFamily: 'ubuntu',
+                        fontFamily: 'Tajawal',
                       ),
                     ),
                   )
@@ -228,7 +226,7 @@ class StateFav extends State<Favorite> with TickerProviderStateMixin {
               child: Text(
                 value.errorMessage,
                 style: const TextStyle(
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
               ),
             );

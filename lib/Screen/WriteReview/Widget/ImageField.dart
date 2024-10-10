@@ -47,7 +47,7 @@ Widget getImageField() {
                     style: TextStyle(
                       color: Theme.of(context).colorScheme.lightBlack,
                       fontSize: textFontSize11,
-                      fontFamily: 'ubuntu',
+                      fontFamily: 'Tajawal',
                     ),
                   )
                 ],

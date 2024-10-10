@@ -9,7 +9,7 @@ class SimBtn extends StatelessWidget {
   final VoidCallback? onBtnSelected;
   double? size;
   double? height;
-  double? paddingvalue; 
+  double? paddingvalue;
   Color? backgroundColor, borderColor, titleFontColor;
   double? borderWidth, borderRadius;
 
@@ -63,7 +63,7 @@ class SimBtn extends StatelessWidget {
           style: Theme.of(context).textTheme.titleMedium!.copyWith(
                 color: titleFontColor ?? colors.whiteTemp,
                 fontWeight: FontWeight.normal,
-                fontFamily: 'ubuntu',
+                fontFamily: 'Tajawal',
               ),
         ),
       ),
@@ -82,41 +82,45 @@ class LoginButtons extends StatelessWidget {
   final Color boxColor;
   final Widget? widgets;
   final Function onpressfunction;
-  const LoginButtons({Key? key,  this.label, required this.textColour, required this.boxColor, required this.onpressfunction, this.widgets}) : super(key: key);
+  const LoginButtons(
+      {Key? key,
+      this.label,
+      required this.textColour,
+      required this.boxColor,
+      required this.onpressfunction,
+      this.widgets})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return  CupertinoButton(
-      padding: const EdgeInsetsDirectional.symmetric(vertical: 15, horizontal: 0),
-                onPressed:() => onpressfunction(),
-                child: Container(
-                  // padding: EdgeInsets.zero,
-                  // width: 90,
-                  height: 50,
-                  alignment: FractionalOffset.center,
-                  decoration: BoxDecoration(
-                       color: boxColor,
-                       boxShadow:  [
-                        BoxShadow(
-                          color: boxColor.withOpacity(0.5),
-                          blurRadius: 9.0,
-                          spreadRadius: 2
-                        ),],
-                      borderRadius:
-                          BorderRadius.circular(circularBorderRadius50)),
-                  child: label != null 
-                  ?  Text(
-                          getTranslated(context, label!),
-                          style: TextStyle(
-                            color: textColour,
-                            fontFamily: 'ubuntu',
-                          ),
-                        )
-                        : widgets
-                ),
-              
-           );
-        
+    return CupertinoButton(
+      padding:
+          const EdgeInsetsDirectional.symmetric(vertical: 15, horizontal: 0),
+      onPressed: () => onpressfunction(),
+      child: Container(
+          // padding: EdgeInsets.zero,
+          // width: 90,
+          height: 50,
+          alignment: FractionalOffset.center,
+          decoration: BoxDecoration(
+              color: boxColor,
+              boxShadow: [
+                BoxShadow(
+                    color: boxColor.withOpacity(0.5),
+                    blurRadius: 9.0,
+                    spreadRadius: 2),
+              ],
+              borderRadius: BorderRadius.circular(circularBorderRadius50)),
+          child: label != null
+              ? Text(
+                  getTranslated(context, label!),
+                  style: TextStyle(
+                    color: textColour,
+                    fontFamily: 'Tajawal',
+                  ),
+                )
+              : widgets),
+    );
   }
 }
 
@@ -152,37 +156,39 @@ class AppBtn extends StatelessWidget {
   Widget _buildBtnAnimation(BuildContext context, Widget? child,
       {required double initialWidth}) {
     return CupertinoButton(
-      padding: EdgeInsetsDirectional.only(top: removeTopPadding ? 0 : 25, start: 0, end: 0,),
-        child: Container(
-          height: 50,
-          alignment: FractionalOffset.center,
-          decoration: BoxDecoration(
-                       color: Theme.of(context).colorScheme.primary,
-                       boxShadow:  [
-                        BoxShadow(
-                          color: Theme.of(context).colorScheme.primary.withOpacity(0.5),
-                          blurRadius: 9.0,
-                          spreadRadius: 2
-                        ),],
-                      borderRadius:
-                          BorderRadius.circular(circularBorderRadius50)),
-          child: btnAnim!.value > 75.0
-              ? Text(
-                  title!,
-                  textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                        color: colors.whiteTemp,
-                        fontWeight: FontWeight.normal,
-                        fontFamily: 'ubuntu',
-                      ),
-                )
-              : const CircularProgressIndicator(
-                  valueColor: AlwaysStoppedAnimation<Color>(
-                    colors.whiteTemp,
-                  ),
+      padding: EdgeInsetsDirectional.only(
+        top: removeTopPadding ? 0 : 25,
+        start: 0,
+        end: 0,
+      ),
+      child: Container(
+        height: 50,
+        alignment: FractionalOffset.center,
+        decoration: BoxDecoration(
+            color: Theme.of(context).colorScheme.primary,
+            boxShadow: [
+              BoxShadow(
+                  color: Theme.of(context).colorScheme.primary.withOpacity(0.5),
+                  blurRadius: 9.0,
+                  spreadRadius: 2),
+            ],
+            borderRadius: BorderRadius.circular(circularBorderRadius50)),
+        child: btnAnim!.value > 75.0
+            ? Text(
+                title!,
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                      color: colors.whiteTemp,
+                      fontWeight: FontWeight.normal,
+                      fontFamily: 'Tajawal',
+                    ),
+              )
+            : const CircularProgressIndicator(
+                valueColor: AlwaysStoppedAnimation<Color>(
+                  colors.whiteTemp,
                 ),
-        ),
-      
+              ),
+      ),
       onPressed: () {
         //if it's not loading do the thing
         if (btnAnim!.value == initialWidth) {

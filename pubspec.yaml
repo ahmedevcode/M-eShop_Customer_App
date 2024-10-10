@@ -103,6 +103,8 @@ flutter:
     - assets/eShop.db
 
   fonts:
-    - family: ubuntu
+    - family: Tajawal
       fonts:
-        - asset: assets/font/Ubuntu-Regular.ttf
+        - asset: assets/font/Tajawal-Regular.ttf
+        - asset: assets/font/Tajawal-Bold.ttf
+

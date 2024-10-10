@@ -92,7 +92,7 @@ class _Write_ReviewState extends State<Write_Review> {
         textAlign: TextAlign.center,
         style: TextStyle(
           color: Theme.of(context).colorScheme.fontColor,
-          fontFamily: 'ubuntu',
+          fontFamily: 'Tajawal',
         ),
       ),
     );
@@ -128,7 +128,7 @@ class _Write_ReviewState extends State<Write_Review> {
             padding:
                 const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8.0),
             child: MaterialButton(
-              height:  45.0,
+              height: 45.0,
               textColor: Theme.of(context).colorScheme.white,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(circularBorderRadius10)),
@@ -161,7 +161,7 @@ class _Write_ReviewState extends State<Write_Review> {
                     ? getTranslated(context, 'SEND_REVIEW')
                     : getTranslated(context, 'UPDATE_REVIEW_LBL'),
                 style: const TextStyle(
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
               ),
             ),
@@ -179,7 +179,7 @@ class _Write_ReviewState extends State<Write_Review> {
       style: Theme.of(context).textTheme.titleLarge!.copyWith(
             fontWeight: FontWeight.bold,
             color: Theme.of(context).colorScheme.fontColor,
-            fontFamily: 'ubuntu',
+            fontFamily: 'Tajawal',
           ),
     );
   }

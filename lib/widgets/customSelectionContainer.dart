@@ -44,7 +44,7 @@ class CustomSelectionContainer extends StatelessWidget {
                           : Theme.of(context).colorScheme.fontColor,
                       fontWeight:
                           isSelected ? FontWeight.bold : FontWeight.normal,
-                      fontFamily: 'ubuntu',
+                      fontFamily: 'Tajawal',
                       fontSize: 14,
                     ),
               ),

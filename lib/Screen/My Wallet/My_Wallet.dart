@@ -103,7 +103,7 @@ class StateWallet extends State<MyWallet> with TickerProviderStateMixin {
               child: InkWell(
                 borderRadius: BorderRadius.circular(circularBorderRadius4),
                 onTap: () => Navigator.of(context).pop(),
-                child:  Center(
+                child: Center(
                   child: Icon(
                     Icons.arrow_back_ios_rounded,
                     color: Theme.of(context).colorScheme.fontColor,
@@ -118,7 +118,7 @@ class StateWallet extends State<MyWallet> with TickerProviderStateMixin {
           style: TextStyle(
             color: Theme.of(context).colorScheme.fontColor,
             fontWeight: FontWeight.normal,
-            fontFamily: 'ubuntu',
+            fontFamily: 'Tajawal',
           ),
         ),
         actions: <Widget>[
@@ -149,7 +149,7 @@ class StateWallet extends State<MyWallet> with TickerProviderStateMixin {
               child: Text(
                 value.errorMessage,
                 style: const TextStyle(
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
               ),
             );
@@ -251,7 +251,7 @@ class StateWallet extends State<MyWallet> with TickerProviderStateMixin {
                               .copyWith(
                                 color: Theme.of(context).colorScheme.fontColor,
                                 fontWeight: FontWeight.bold,
-                                fontFamily: 'ubuntu',
+                                fontFamily: 'Tajawal',
                               ),
                         ),
                       ],
@@ -267,7 +267,7 @@ class StateWallet extends State<MyWallet> with TickerProviderStateMixin {
                               .textTheme
                               .titleLarge!
                               .copyWith(
-                                fontFamily: 'ubuntu',
+                                fontFamily: 'Tajawal',
                                 color: Theme.of(context).colorScheme.fontColor,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -344,7 +344,7 @@ class StateWallet extends State<MyWallet> with TickerProviderStateMixin {
                   : getTranslated(context, 'Wallet History'),
               style: const TextStyle(
                 fontWeight: FontWeight.bold,
-                fontFamily: 'ubuntu',
+                fontFamily: 'Tajawal',
               ),
             ),
           ),

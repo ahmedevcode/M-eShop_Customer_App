@@ -107,7 +107,7 @@ class _SignUpPageState extends State<SignUp> with TickerProviderStateMixin {
               name = i[USERNAME];
               email = i[EMAIL];
               mobile = i[MOBILE];
-              
+
               SettingProvider settingProvider = context.read<SettingProvider>();
               settingProvider.saveUserDetail(
                   id!,
@@ -200,7 +200,7 @@ class _SignUpPageState extends State<SignUp> with TickerProviderStateMixin {
                 color: Theme.of(context).colorScheme.fontColor,
                 fontWeight: FontWeight.bold,
                 fontSize: textFontSize23,
-                fontFamily: 'ubuntu',
+                fontFamily: 'Tajawal',
                 letterSpacing: 0.8,
               ),
         ),
@@ -218,7 +218,7 @@ class _SignUpPageState extends State<SignUp> with TickerProviderStateMixin {
         style: Theme.of(context).textTheme.titleSmall!.copyWith(
               color: Theme.of(context).colorScheme.fontColor.withOpacity(0.38),
               fontWeight: FontWeight.bold,
-              fontFamily: 'ubuntu',
+              fontFamily: 'Tajawal',
             ),
       ),
     );
@@ -241,23 +241,26 @@ class _SignUpPageState extends State<SignUp> with TickerProviderStateMixin {
           FilteringTextInputFormatter.deny(RegExp('[ ]')),
         ],
         decoration: InputDecoration(
-          prefixIcon: Icon(Icons.person, color: Theme.of(context).colorScheme.fontColor,),
-            contentPadding: const EdgeInsets.symmetric(
-              horizontal: 13,
-              vertical: 5,
-            ),
-            hintText: getTranslated(context, 'NAMEHINT_LBL'),
-            hintStyle: TextStyle(
-                color:
-                    Theme.of(context).colorScheme.fontColor.withOpacity(0.3),
-                fontWeight: FontWeight.bold,
-                fontSize: textFontSize13),
-            fillColor: Theme.of(context).colorScheme.white,
-            filled: true,
-            border: OutlineInputBorder(
-          borderSide: BorderSide.none,
-          borderRadius: BorderRadius.circular(circularBorderRadius10),
-        ),),
+          prefixIcon: Icon(
+            Icons.person,
+            color: Theme.of(context).colorScheme.fontColor,
+          ),
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: 13,
+            vertical: 5,
+          ),
+          hintText: getTranslated(context, 'NAMEHINT_LBL'),
+          hintStyle: TextStyle(
+              color: Theme.of(context).colorScheme.fontColor.withOpacity(0.3),
+              fontWeight: FontWeight.bold,
+              fontSize: textFontSize13),
+          fillColor: Theme.of(context).colorScheme.white,
+          filled: true,
+          border: OutlineInputBorder(
+            borderSide: BorderSide.none,
+            borderRadius: BorderRadius.circular(circularBorderRadius10),
+          ),
+        ),
         validator: (val) => StringValidation.validateUserName(
             val!,
             getTranslated(context, 'USER_REQUIRED'),
@@ -289,24 +292,26 @@ class _SignUpPageState extends State<SignUp> with TickerProviderStateMixin {
         ],
         controller: emailController,
         decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.mail, color: Theme.of(context).colorScheme.fontColor,),
-      
-            contentPadding: const EdgeInsets.symmetric(
-              horizontal: 13,
-              vertical: 5,
-            ),
-            hintText: getTranslated(context, 'EMAILHINT_LBL'),
-            hintStyle: TextStyle(
-                color:
-                    Theme.of(context).colorScheme.fontColor.withOpacity(0.3),
-                fontWeight: FontWeight.bold,
-                fontSize: textFontSize13),
-            fillColor: Theme.of(context).colorScheme.white,
-            filled: true,
-            border: OutlineInputBorder(
-          borderSide: BorderSide.none,
-          borderRadius: BorderRadius.circular(circularBorderRadius10),
-        ),),
+          prefixIcon: Icon(
+            Icons.mail,
+            color: Theme.of(context).colorScheme.fontColor,
+          ),
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: 13,
+            vertical: 5,
+          ),
+          hintText: getTranslated(context, 'EMAILHINT_LBL'),
+          hintStyle: TextStyle(
+              color: Theme.of(context).colorScheme.fontColor.withOpacity(0.3),
+              fontWeight: FontWeight.bold,
+              fontSize: textFontSize13),
+          fillColor: Theme.of(context).colorScheme.white,
+          filled: true,
+          border: OutlineInputBorder(
+            borderSide: BorderSide.none,
+            borderRadius: BorderRadius.circular(circularBorderRadius10),
+          ),
+        ),
         validator: (val) => StringValidation.validateEmail(
           val!,
           getTranslated(context, 'EMAIL_REQUIRED'),
@@ -348,12 +353,15 @@ class _SignUpPageState extends State<SignUp> with TickerProviderStateMixin {
           referFocus!.unfocus();
         },
         decoration: InputDecoration(
-        prefixIcon: Icon(Icons.lock, color: Theme.of(context).colorScheme.fontColor,),
-        errorMaxLines: 4,
-        contentPadding: const EdgeInsets.symmetric(
-          horizontal: 13,
-          vertical: 5,
-        ),
+          prefixIcon: Icon(
+            Icons.lock,
+            color: Theme.of(context).colorScheme.fontColor,
+          ),
+          errorMaxLines: 4,
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: 13,
+            vertical: 5,
+          ),
           hintText: getTranslated(context, 'REFER'),
           hintStyle: TextStyle(
             color: Theme.of(context).colorScheme.fontColor.withOpacity(0.3),
@@ -399,7 +407,10 @@ class _SignUpPageState extends State<SignUp> with TickerProviderStateMixin {
           _fieldFocusChange(context, passFocus!, referFocus);
         },
         decoration: InputDecoration(
-          prefixIcon: Icon(Icons.lock, color: Theme.of(context).colorScheme.fontColor,),
+          prefixIcon: Icon(
+            Icons.lock,
+            color: Theme.of(context).colorScheme.fontColor,
+          ),
           errorMaxLines: 4,
           contentPadding: const EdgeInsets.symmetric(
             horizontal: 13,
@@ -463,7 +474,7 @@ class _SignUpPageState extends State<SignUp> with TickerProviderStateMixin {
             style: Theme.of(context).textTheme.titleSmall!.copyWith(
                   color: Theme.of(context).colorScheme.fontColor,
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
           ),
           InkWell(
@@ -475,7 +486,7 @@ class _SignUpPageState extends State<SignUp> with TickerProviderStateMixin {
               style: Theme.of(context).textTheme.titleSmall!.copyWith(
                     color: Theme.of(context).colorScheme.primary,
                     fontWeight: FontWeight.bold,
-                    fontFamily: 'ubuntu',
+                    fontFamily: 'Tajawal',
                   ),
             ),
           )

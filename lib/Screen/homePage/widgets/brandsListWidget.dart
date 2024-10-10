@@ -49,7 +49,7 @@ class BrandsListWidget extends StatelessWidget {
                             children: <Widget>[
                               ClipRRect(
                                 borderRadius: BorderRadius.circular(
-                                    circularBorderRadius4),
+                                    circularBorderRadius15),
                                 child: DesignConfiguration.getCacheNotworkImage(
                                   boxFit: BoxFit.contain,
                                   context: context,
@@ -70,7 +70,7 @@ class BrandsListWidget extends StatelessWidget {
                                         .textTheme
                                         .bodySmall!
                                         .copyWith(
-                                          fontFamily: 'ubuntu',
+                                          fontFamily: 'Tajawal',
                                           color: Theme.of(context)
                                               .colorScheme
                                               .fontColor,
@@ -122,7 +122,7 @@ class BrandsListWidget extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: Theme.of(context).colorScheme.white,
                         borderRadius:
-                            BorderRadius.circular(circularBorderRadius4),
+                            BorderRadius.circular(circularBorderRadius15),
                       ),
                       width: 50.0,
                       height: 50.0,

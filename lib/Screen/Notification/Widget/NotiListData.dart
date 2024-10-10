@@ -105,7 +105,7 @@ class NotiListData extends StatelessWidget {
                       model.title!,
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontFamily: 'ubuntu',
+                        fontFamily: 'Tajawal',
                         fontSize: textFontSize16,
                       ),
                     ),
@@ -116,7 +116,7 @@ class NotiListData extends StatelessWidget {
                   Text(
                     model.desc!,
                     style: const TextStyle(
-                      fontFamily: 'ubuntu',
+                      fontFamily: 'Tajawal',
                     ),
                   ),
                   const SizedBox(
@@ -125,7 +125,7 @@ class NotiListData extends StatelessWidget {
                   Text(
                     model.date!,
                     style: TextStyle(
-                        fontFamily: 'ubuntu',
+                        fontFamily: 'Tajawal',
                         fontSize: textFontSize10,
                         color: Theme.of(context)
                             .colorScheme

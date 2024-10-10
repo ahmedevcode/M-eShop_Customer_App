@@ -60,7 +60,7 @@ class SubCategory extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
             style: Theme.of(context).textTheme.bodySmall!.copyWith(
                   color: Theme.of(context).colorScheme.fontColor,
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                   fontSize: textFontSize14,
                 ),
           )

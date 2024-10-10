@@ -78,9 +78,9 @@ class SingleProductContainer extends StatelessWidget {
                           '$heroTagUniqueString$sectionPosition$index${productDetails.id}',
                       child: ClipRRect(
                         borderRadius: const BorderRadius.only(
-                            topLeft: Radius.circular(circularBorderRadius8),
-                            topRight: Radius.circular(circularBorderRadius8),
-                          ),
+                          topLeft: Radius.circular(circularBorderRadius8),
+                          topRight: Radius.circular(circularBorderRadius8),
+                        ),
                         child: Stack(
                           children: [
                             DesignConfiguration.getCacheNotworkImage(
@@ -105,7 +105,7 @@ class SingleProductContainer extends StatelessWidget {
                                               .textTheme
                                               .bodySmall!
                                               .copyWith(
-                                                fontFamily: 'ubuntu',
+                                                fontFamily: 'Tajawal',
                                                 color: colors.red,
                                                 fontWeight: FontWeight.bold,
                                               ),
@@ -120,17 +120,17 @@ class SingleProductContainer extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      top: 0,
-                      right: 0,
-                      child: CustomFevoriteButtonForCart(model: productDetails)
-                      
-                    ),
+                        top: 0,
+                        right: 0,
+                        child:
+                            CustomFevoriteButtonForCart(model: productDetails)),
                     if (productDetails.noOfRating! != '0')
                       Positioned(
                         bottom: 0,
                         right: 0,
-                        child: RatingCartForProduct(noOfRating: productDetails.noOfRating!, totalRating: productDetails.rating!),
-                        
+                        child: RatingCartForProduct(
+                            noOfRating: productDetails.noOfRating!,
+                            totalRating: productDetails.rating!),
                       ),
                   ],
                 ),
@@ -152,7 +152,7 @@ class SingleProductContainer extends StatelessWidget {
                       child: Text(
                         productDetails.name!,
                         style: Theme.of(context).textTheme.titleSmall!.copyWith(
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                               color: Theme.of(context).colorScheme.fontColor,
                               fontWeight: FontWeight.w400,
                               fontStyle: FontStyle.normal,
@@ -176,57 +176,55 @@ class SingleProductContainer extends StatelessWidget {
                               fontSize: textFontSize14,
                               fontWeight: FontWeight.w700,
                               fontStyle: FontStyle.normal,
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                           ),
-                          SizedBox(width: 5,),
-                          if(showDiscountAtSameLine)...{
+                          SizedBox(
+                            width: 5,
+                          ),
+                          if (showDiscountAtSameLine) ...{
                             if (double.parse(productDetails
-                                                .prVarientList![0].disPrice!) !=
-                                            0)
-                                          Text(
-                                            '${DesignConfiguration.getPriceFormat(context, double.parse(productDetails.prVarientList![0].price!))}',
-                                            style: Theme.of(context)
-                                                .textTheme
-                                                .labelSmall!
-                                                .copyWith(
-                                                  color: Theme.of(context)
-                                                      .colorScheme
-                                                      .lightBlack,
-                                                  fontFamily: 'ubuntu',
-                                                  decoration: TextDecoration
-                                                      .lineThrough,
-                                                  decorationColor:
-                                                      colors.darkColor3,
-                                                  decorationStyle:
-                                                      TextDecorationStyle.solid,
-                                                  decorationThickness: 2,
-                                                  letterSpacing: 0,
-                                                  fontSize: textFontSize10,
-                                                  fontWeight: FontWeight.w400,
-                                                  fontStyle: FontStyle.normal,
-                                                ),
-                                          ),
-                                        if (double.parse(offPer) > 0)
-                                          Text(
-                                            '  ${double.parse(offPer).toStringAsFixed(2)}%',
-                                            maxLines: 1,
-                                            overflow: TextOverflow.ellipsis,
-                                            style: Theme.of(context)
-                                                .textTheme
-                                                .labelSmall!
-                                                .copyWith(
-                                                  fontFamily: 'ubuntu',
-                                                  color: colors.green,
-                                                  letterSpacing: 0,
-                                                  fontSize: textFontSize10,
-                                                  fontWeight: FontWeight.w400,
-                                                  fontStyle: FontStyle.normal,
-                                                ),
-                                          ),
-                                     
+                                    .prVarientList![0].disPrice!) !=
+                                0)
+                              Text(
+                                '${DesignConfiguration.getPriceFormat(context, double.parse(productDetails.prVarientList![0].price!))}',
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .labelSmall!
+                                    .copyWith(
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .lightBlack,
+                                      fontFamily: 'Tajawal',
+                                      decoration: TextDecoration.lineThrough,
+                                      decorationColor: colors.darkColor3,
+                                      decorationStyle:
+                                          TextDecorationStyle.solid,
+                                      decorationThickness: 2,
+                                      letterSpacing: 0,
+                                      fontSize: textFontSize10,
+                                      fontWeight: FontWeight.w400,
+                                      fontStyle: FontStyle.normal,
+                                    ),
+                              ),
+                            if (double.parse(offPer) > 0)
+                              Text(
+                                '  ${double.parse(offPer).toStringAsFixed(2)}%',
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .labelSmall!
+                                    .copyWith(
+                                      fontFamily: 'Tajawal',
+                                      color: colors.green,
+                                      letterSpacing: 0,
+                                      fontSize: textFontSize10,
+                                      fontWeight: FontWeight.w400,
+                                      fontStyle: FontStyle.normal,
+                                    ),
+                              ),
                           }
-                              
                         ],
                       ),
                     ),
@@ -252,7 +250,7 @@ class SingleProductContainer extends StatelessWidget {
                                           color: Theme.of(context)
                                               .colorScheme
                                               .lightBlack,
-                                          fontFamily: 'ubuntu',
+                                          fontFamily: 'Tajawal',
                                           decoration:
                                               TextDecoration.lineThrough,
                                           decorationColor: colors.darkColor3,
@@ -275,7 +273,7 @@ class SingleProductContainer extends StatelessWidget {
                                           .textTheme
                                           .labelSmall!
                                           .copyWith(
-                                            fontFamily: 'ubuntu',
+                                            fontFamily: 'Tajawal',
                                             color: colors.green,
                                             letterSpacing: 0,
                                             fontSize: textFontSize10,

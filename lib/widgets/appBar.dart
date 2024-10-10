@@ -16,7 +16,7 @@ import '../Screen/Language/languageSettings.dart';
 
 getAppBar(String title, BuildContext context, Function setState,
     {Widget? classType, Function()? onTap}) {
-      double size = MediaQuery.of(context).size.width;
+  double size = MediaQuery.of(context).size.width;
   return AppBar(
     titleSpacing: 0,
     // systemOverlayStyle: SystemUiOverlayStyle(
@@ -26,21 +26,20 @@ getAppBar(String title, BuildContext context, Function setState,
     leading: Builder(
       builder: (BuildContext context) {
         return InkWell(
-            // borderRadius: BorderRadius.circular(circularBorderRadius4),
-            onTap: onTap ??
-                () => classType != null
-                    ? Navigator.pushAndRemoveUntil(
-                        context,
-                        MaterialPageRoute(
-                            builder: (BuildContext context) => classType),
-                        (route) => false)
-                    : Navigator.of(context).pop(),
-            child:  Icon(
-              Icons.arrow_back_ios_rounded,
-              color: Theme.of(context).colorScheme.fontColor,
-            ),
-          );
-        
+          // borderRadius: BorderRadius.circular(circularBorderRadius4),
+          onTap: onTap ??
+              () => classType != null
+                  ? Navigator.pushAndRemoveUntil(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => classType),
+                      (route) => false)
+                  : Navigator.of(context).pop(),
+          child: Icon(
+            Icons.arrow_back_ios_rounded,
+            color: Theme.of(context).colorScheme.fontColor,
+          ),
+        );
       },
     ),
     title: Text(
@@ -48,47 +47,47 @@ getAppBar(String title, BuildContext context, Function setState,
       style: TextStyle(
         color: Theme.of(context).colorScheme.fontColor,
         fontWeight: FontWeight.normal,
-        fontFamily: 'ubuntu',
+        fontFamily: 'Tajawal',
       ),
     ),
-    actions: <Widget>
-    [
-      title == getTranslated(context, 'FAVORITE') 
+    actions: <Widget>[
+      title == getTranslated(context, 'FAVORITE')
           ? const SizedBox()
           : GestureDetector(
-            child: Padding(
-              padding:  EdgeInsets.only(left: size * 0.02),
-              child: SvgPicture.asset(
+              child: Padding(
+                padding: EdgeInsets.only(left: size * 0.02),
+                child: SvgPicture.asset(
                   DesignConfiguration.setSvgPath('desel_fav'),
-                  colorFilter:
-                       ColorFilter.mode(Theme.of(context).colorScheme.fontColor, BlendMode.srcIn),
+                  colorFilter: ColorFilter.mode(
+                      Theme.of(context).colorScheme.fontColor, BlendMode.srcIn),
                 ),
-            ),
+              ),
               onTap: () {
                 Routes.navigateToFavoriteScreen(context);
               },
-          ),
-          // IconButton(
-          //     padding: const EdgeInsets.all(0),
-          //     icon: SvgPicture.asset(
-          //       DesignConfiguration.setSvgPath('desel_fav'),
-          //       colorFilter:
-          //            ColorFilter.mode(Theme.of(context).colorScheme.fontColor, BlendMode.srcIn),
-          //     ),
-          //     onPressed: () {
-          //       Routes.navigateToFavoriteScreen(context);
-          //     },
-          //   ),
+            ),
+      // IconButton(
+      //     padding: const EdgeInsets.all(0),
+      //     icon: SvgPicture.asset(
+      //       DesignConfiguration.setSvgPath('desel_fav'),
+      //       colorFilter:
+      //            ColorFilter.mode(Theme.of(context).colorScheme.fontColor, BlendMode.srcIn),
+      //     ),
+      //     onPressed: () {
+      //       Routes.navigateToFavoriteScreen(context);
+      //     },
+      //   ),
       Selector<UserProvider, String>(
         builder: (context, data, child) {
-          return  IconButton(
+          return IconButton(
             icon: Stack(
               children: [
                 Center(
                   child: SvgPicture.asset(
                     DesignConfiguration.setSvgPath('appbarCart'),
-                    colorFilter:
-                         ColorFilter.mode(Theme.of(context).colorScheme.fontColor, BlendMode.srcIn),
+                    colorFilter: ColorFilter.mode(
+                        Theme.of(context).colorScheme.fontColor,
+                        BlendMode.srcIn),
                   ),
                 ),
                 (data.isNotEmpty && data != '0')
@@ -108,7 +107,7 @@ getAppBar(String title, BuildContext context, Function setState,
                                 style: const TextStyle(
                                   fontSize: textFontSize7,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: 'ubuntu',
+                                  fontFamily: 'Tajawal',
                                   color: colors.whiteTemp,
                                 ),
                               ),
@@ -141,18 +140,21 @@ getAppBar(String title, BuildContext context, Function setState,
     ],
   );
 }
-getappbarforcart(String title,
-  BuildContext context,){
+
+getappbarforcart(
+  String title,
+  BuildContext context,
+) {
   return AppBar(
     toolbarHeight: 50,
     titleSpacing: 0,
     backgroundColor: Theme.of(context).colorScheme.white,
-    elevation: 0.8 ,
+    elevation: 0.8,
     shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.vertical(
-              bottom: Radius.circular(10), // Radius for bottom left and right corners
-            ),
-          ),
+      borderRadius: BorderRadius.vertical(
+        bottom: Radius.circular(10), // Radius for bottom left and right corners
+      ),
+    ),
     title: Padding(
       padding: const EdgeInsets.only(left: 8.0),
       child: Text(
@@ -160,13 +162,13 @@ getappbarforcart(String title,
         style: TextStyle(
           color: Theme.of(context).colorScheme.fontColor,
           fontWeight: FontWeight.normal,
-          fontFamily: 'ubuntu',
+          fontFamily: 'Tajawal',
         ),
       ),
     ),
   );
-  
 }
+
 getSimpleAppBar(
   String title,
   BuildContext context,
@@ -183,7 +185,7 @@ getSimpleAppBar(
           child: InkWell(
             borderRadius: BorderRadius.circular(circularBorderRadius4),
             onTap: () => Navigator.of(context).pop(),
-            child:  Center(
+            child: Center(
               child: Icon(
                 Icons.arrow_back_ios_rounded,
                 color: Theme.of(context).colorScheme.fontColor,
@@ -198,7 +200,7 @@ getSimpleAppBar(
       style: TextStyle(
         color: Theme.of(context).colorScheme.fontColor,
         fontWeight: FontWeight.normal,
-        fontFamily: 'ubuntu',
+        fontFamily: 'Tajawal',
       ),
     ),
   );

@@ -45,7 +45,7 @@ class CustomBottomSheet {
           style: Theme.of(context).textTheme.titleLarge!.copyWith(
                 fontWeight: FontWeight.bold,
                 color: Theme.of(context).colorScheme.fontColor,
-                fontFamily: 'ubuntu',
+                fontFamily: 'Tajawal',
               ),
         ),
       );

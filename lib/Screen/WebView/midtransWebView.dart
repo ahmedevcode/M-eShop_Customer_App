@@ -154,7 +154,7 @@ class StateMidTrashWebview extends State<MidTrashWebview> {
         title: Text(
           appName,
           style: TextStyle(
-            fontFamily: 'ubuntu',
+            fontFamily: 'Tajawal',
             color: Theme.of(context).colorScheme.fontColor,
           ),
         ),
@@ -191,7 +191,7 @@ class StateMidTrashWebview extends State<MidTrashWebview> {
                       child: Text(
                         message,
                         style: TextStyle(
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                           color: Theme.of(context).colorScheme.white,
                         ),
                       ),

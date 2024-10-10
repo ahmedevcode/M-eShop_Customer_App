@@ -739,7 +739,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                   child: Text(
                     data.citySearchLIst[index].name!,
                     style: Theme.of(context).textTheme.titleSmall!.copyWith(
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                         ),
                   ),
                 ),
@@ -781,7 +781,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                               .textTheme
                               .titleMedium!
                               .copyWith(
-                                  fontFamily: 'ubuntu',
+                                  fontFamily: 'Tajawal',
                                   color:
                                       Theme.of(context).colorScheme.fontColor),
                         ),
@@ -1022,7 +1022,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                                     'CHECK_PRODUCT_AVAILABILITY',
                                   ),
                                   style: const TextStyle(
-                                    fontFamily: 'ubuntu',
+                                    fontFamily: 'Tajawal',
                                   ),
                                 ),
                               ),
@@ -1113,7 +1113,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                                       getTranslated(context, 'Check'),
                                       style: const TextStyle(
                                         color: colors.primary,
-                                        fontFamily: 'ubuntu',
+                                        fontFamily: 'Tajawal',
                                       ),
                                     ),
                                   ),
@@ -1186,7 +1186,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                                       getTranslated(context, 'Check'),
                                       style: const TextStyle(
                                         color: colors.primary,
-                                        fontFamily: 'ubuntu',
+                                        fontFamily: 'Tajawal',
                                       ),
                                     ),
                                   ),
@@ -1524,7 +1524,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                           fontWeight: FontWeight.bold,
                           color: Theme.of(context).colorScheme.lightBlack,
                           fontSize: textFontSize14,
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                         ),
                       ),
                       Padding(
@@ -1550,7 +1550,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                       color: Theme.of(context).colorScheme.lightBlack,
                       fontSize: textFontSize15,
                       fontWeight: FontWeight.bold,
-                      fontFamily: 'ubuntu',
+                      fontFamily: 'Tajawal',
                     ),
                   ),
                   onPressed: () {
@@ -1564,7 +1564,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                       color: colors.primary,
                       fontSize: textFontSize15,
                       fontWeight: FontWeight.bold,
-                      fontFamily: 'ubuntu',
+                      fontFamily: 'Tajawal',
                     ),
                   ),
                   onPressed: () {
@@ -1978,7 +1978,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                                       data,
                                       style: TextStyle(
                                         fontSize: textFontSize8,
-                                        fontFamily: 'ubuntu',
+                                        fontFamily: 'Tajawal',
                                         fontWeight: FontWeight.bold,
                                         color:
                                             Theme.of(context).colorScheme.white,
@@ -2285,7 +2285,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                                                       fontSize: textFontSize16,
                                                       fontWeight:
                                                           FontWeight.normal,
-                                                      fontFamily: 'ubuntu',
+                                                      fontFamily: 'Tajawal',
                                                     ),
                                               ),
                                             ),
@@ -2321,7 +2321,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                                                       color: colors.primary,
                                                       fontWeight:
                                                           FontWeight.normal,
-                                                      fontFamily: 'ubuntu',
+                                                      fontFamily: 'Tajawal',
                                                     ),
                                               ),
                                             ),
@@ -2374,7 +2374,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                                                       fontSize: textFontSize16,
                                                       fontWeight:
                                                           FontWeight.normal,
-                                                      fontFamily: 'ubuntu',
+                                                      fontFamily: 'Tajawal',
                                                     ),
                                               ),
                                             ),
@@ -2410,7 +2410,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                                     .copyWith(
                                       fontWeight: FontWeight.bold,
                                       color: colors.red,
-                                      fontFamily: 'ubuntu',
+                                      fontFamily: 'Tajawal',
                                     ),
                               ),
                             ),
@@ -2479,7 +2479,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                                                     .white,
                                                 fontSize: textFontSize16,
                                                 fontWeight: FontWeight.normal,
-                                                fontFamily: 'ubuntu',
+                                                fontFamily: 'Tajawal',
                                               ),
                                         ),
                                       ),
@@ -2509,7 +2509,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                                               .copyWith(
                                                 color: colors.primary,
                                                 fontWeight: FontWeight.normal,
-                                                fontFamily: 'ubuntu',
+                                                fontFamily: 'Tajawal',
                                               ),
                                         ),
                                       ),
@@ -2556,7 +2556,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                                                     .white,
                                                 fontSize: textFontSize16,
                                                 fontWeight: FontWeight.normal,
-                                                fontFamily: 'ubuntu',
+                                                fontFamily: 'Tajawal',
                                               ),
                                         ),
                                       ),
@@ -2594,7 +2594,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                                         .copyWith(
                                           fontWeight: FontWeight.bold,
                                           color: Colors.red,
-                                          fontFamily: 'ubuntu',
+                                          fontFamily: 'Tajawal',
                                         ),
                                   ),
                                 ),
@@ -2622,7 +2622,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                     getTranslated(context, 'MORE_PRODUCT'),
                     style: Theme.of(context).textTheme.titleMedium!.copyWith(
                           color: Theme.of(context).colorScheme.fontColor,
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                         ),
                   ),
                 ),
@@ -2685,7 +2685,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                     getTranslated(context, 'You are looking for'),
                     style: Theme.of(context).textTheme.titleMedium!.copyWith(
                           color: Theme.of(context).colorScheme.fontColor,
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                         ),
                   ),
                 ),
@@ -2741,7 +2741,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.black,
                     fontWeight: FontWeight.w500,
-                    fontFamily: 'Ubuntu',
+                    fontFamily: 'Tajawal',
                     fontStyle: FontStyle.normal,
                     fontSize: textFontSize16,
                   ),
@@ -2865,7 +2865,7 @@ class StateItem extends State<ProductDetail> with TickerProviderStateMixin {
           overflow: TextOverflow.ellipsis,
           style: TextStyle(
             color: Theme.of(context).colorScheme.fontColor,
-            fontFamily: 'ubuntu',
+            fontFamily: 'Tajawal',
             fontSize: textFontSize14,
           ),
         ),

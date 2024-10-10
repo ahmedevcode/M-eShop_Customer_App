@@ -175,7 +175,7 @@ class _MobileOTPState extends State<VerifyOtp> with TickerProviderStateMixin {
               fontWeight: FontWeight.bold,
               fontSize: textFontSize23,
               letterSpacing: 0.8,
-              fontFamily: 'ubuntu',
+              fontFamily: 'Tajawal',
             ),
       ),
     );
@@ -191,7 +191,7 @@ class _MobileOTPState extends State<VerifyOtp> with TickerProviderStateMixin {
         style: Theme.of(context).textTheme.titleSmall!.copyWith(
               color: Theme.of(context).colorScheme.fontColor.withOpacity(0.5),
               fontWeight: FontWeight.bold,
-              fontFamily: 'ubuntu',
+              fontFamily: 'Tajawal',
             ),
       ),
     );
@@ -205,7 +205,7 @@ class _MobileOTPState extends State<VerifyOtp> with TickerProviderStateMixin {
         style: Theme.of(context).textTheme.titleSmall!.copyWith(
               color: Theme.of(context).colorScheme.fontColor.withOpacity(0.5),
               fontWeight: FontWeight.bold,
-              fontFamily: 'ubuntu',
+              fontFamily: 'Tajawal',
             ),
       ),
     );
@@ -216,20 +216,24 @@ class _MobileOTPState extends State<VerifyOtp> with TickerProviderStateMixin {
       padding: const EdgeInsetsDirectional.only(top: 30),
       child: PinFieldAutoFill(
         decoration: BoxLooseDecoration(
-          hintText: '000000',
-          hintTextStyle: TextStyle(fontSize: textFontSize20,
-                color: Theme.of(context).colorScheme.fontColor.withOpacity(0.5)),
+            hintText: '000000',
+            hintTextStyle: TextStyle(
+                fontSize: textFontSize20,
+                color:
+                    Theme.of(context).colorScheme.fontColor.withOpacity(0.5)),
             textStyle: TextStyle(
                 fontSize: textFontSize20,
                 color: Theme.of(context).colorScheme.fontColor),
             radius: const Radius.circular(circularBorderRadius4),
             gapSpace: 15,
-            bgColorBuilder: FixedColorBuilder(
-                Theme.of(context).colorScheme.white),
-            strokeColorBuilder: PinListenColorBuilder(Theme.of(context).colorScheme.fontColor, Theme.of(context).colorScheme.white)
+            bgColorBuilder:
+                FixedColorBuilder(Theme.of(context).colorScheme.white),
+            strokeColorBuilder: PinListenColorBuilder(
+                Theme.of(context).colorScheme.fontColor,
+                Theme.of(context).colorScheme.white)
             // FixedColorBuilder(
             //     Theme.of(context).colorScheme.white.withOpacity(0.2))
-                ),
+            ),
         currentCode: otp,
         codeLength: 6,
         onCodeChanged: (String? code) {
@@ -252,10 +256,12 @@ class _MobileOTPState extends State<VerifyOtp> with TickerProviderStateMixin {
             Text(
               getTranslated(context, 'DIDNT_GET_THE_CODE'),
               style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                    color:
-                        Theme.of(context).colorScheme.fontColor.withOpacity(0.5),
+                    color: Theme.of(context)
+                        .colorScheme
+                        .fontColor
+                        .withOpacity(0.5),
                     fontWeight: FontWeight.bold,
-                    fontFamily: 'ubuntu',
+                    fontFamily: 'Tajawal',
                   ),
             ),
             InkWell(
@@ -268,7 +274,7 @@ class _MobileOTPState extends State<VerifyOtp> with TickerProviderStateMixin {
                 style: Theme.of(context).textTheme.bodySmall!.copyWith(
                       color: Theme.of(context).colorScheme.primary,
                       fontWeight: FontWeight.bold,
-                      fontFamily: 'ubuntu',
+                      fontFamily: 'Tajawal',
                     ),
               ),
             )
@@ -461,10 +467,15 @@ class _MobileOTPState extends State<VerifyOtp> with TickerProviderStateMixin {
     }
   }
 
-  Widget backBotton(){
+  Widget backBotton() {
     return InkWell(
-      child: Icon(Icons.arrow_back_ios, color: Theme.of(context).colorScheme.black,),
-      onTap: (){Navigator.of(context).pop();},
+      child: Icon(
+        Icons.arrow_back_ios,
+        color: Theme.of(context).colorScheme.black,
+      ),
+      onTap: () {
+        Navigator.of(context).pop();
+      },
     );
   }
 
@@ -497,7 +508,7 @@ class _MobileOTPState extends State<VerifyOtp> with TickerProviderStateMixin {
               otpText(),
               mobText(),
               otpLayout(),
-              
+
               verifyBtn(),
               resendText(),
             ],

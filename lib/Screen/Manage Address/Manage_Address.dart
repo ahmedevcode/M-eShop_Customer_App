@@ -216,7 +216,7 @@ class StateAddress extends State<ManageAddress> with TickerProviderStateMixin {
                                 child: Text(
                                   getTranslated(context, 'NOADDRESS'),
                                   style: const TextStyle(
-                                    fontFamily: 'ubuntu',
+                                    fontFamily: 'Tajawal',
                                   ),
                                 ),
                               )

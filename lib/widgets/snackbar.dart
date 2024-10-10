@@ -65,7 +65,7 @@ void showOverlay(
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.black,
                     fontSize: textFontSize14,
-                    fontFamily: 'ubuntu',
+                    fontFamily: 'Tajawal',
                     fontWeight: FontWeight.normal,
                   ),
                 ),

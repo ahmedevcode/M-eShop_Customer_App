@@ -60,7 +60,7 @@ class _ReferEarnState extends State<ReferEarn> {
                     getTranslated(context, 'YOUR_CODE'),
                     style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                           color: Theme.of(context).colorScheme.fontColor,
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                         ),
                   ),
                 ),
@@ -85,7 +85,7 @@ class _ReferEarnState extends State<ReferEarn> {
                             .titleMedium!
                             .copyWith(
                               color: Theme.of(context).colorScheme.fontColor,
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                       ),
                     ),
@@ -107,7 +107,7 @@ class _ReferEarnState extends State<ReferEarn> {
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.labelLarge!.copyWith(
                             color: Theme.of(context).colorScheme.fontColor,
-                            fontFamily: 'ubuntu',
+                            fontFamily: 'Tajawal',
                           ),
                     ),
                   ),

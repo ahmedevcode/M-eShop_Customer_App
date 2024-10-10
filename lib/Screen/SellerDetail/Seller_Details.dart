@@ -758,7 +758,7 @@ class _SellerProfileState extends State<SellerProfile>
                 color: Theme.of(context).colorScheme.fontColor,
                 fontWeight: FontWeight.bold,
                 fontSize: textFontSize16,
-                fontFamily: 'ubuntu',
+                fontFamily: 'Tajawal',
               ),
               textAlign: TextAlign.center,
             ),
@@ -800,7 +800,7 @@ class _SellerProfileState extends State<SellerProfile>
                   child: Text(
                     lastWords,
                     style: const TextStyle(
-                      fontFamily: 'ubuntu',
+                      fontFamily: 'Tajawal',
                     ),
                   ),
                 ),
@@ -819,7 +819,7 @@ class _SellerProfileState extends State<SellerProfile>
                                   color:
                                       Theme.of(context).colorScheme.fontColor,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: 'ubuntu',
+                                  fontFamily: 'Tajawal',
                                 ),
                           )
                         : Text(
@@ -831,7 +831,7 @@ class _SellerProfileState extends State<SellerProfile>
                                   color:
                                       Theme.of(context).colorScheme.fontColor,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: 'ubuntu',
+                                  fontFamily: 'Tajawal',
                                 ),
                           ),
                   ),
@@ -890,7 +890,7 @@ class _SellerProfileState extends State<SellerProfile>
                             style: TextStyle(
                               color: Theme.of(context).colorScheme.fontColor,
                               fontSize: textFontSize18,
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                           ),
                           IconButton(
@@ -931,7 +931,7 @@ class _SellerProfileState extends State<SellerProfile>
                                       .fontColor
                                       .withOpacity(0.6),
                               fontSize: textFontSize16,
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                           ),
                           Radio<int>(
@@ -986,7 +986,7 @@ class _SellerProfileState extends State<SellerProfile>
                                           .fontColor
                                           .withOpacity(0.6),
                               fontSize: textFontSize16,
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                           ),
                           Radio<int>(
@@ -1041,7 +1041,7 @@ class _SellerProfileState extends State<SellerProfile>
                                           .fontColor
                                           .withOpacity(0.6),
                               fontSize: textFontSize16,
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                           ),
                           Radio<int>(
@@ -1093,7 +1093,7 @@ class _SellerProfileState extends State<SellerProfile>
                                       .fontColor
                                       .withOpacity(0.6),
                               fontSize: textFontSize16,
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                           ),
                           Radio<int>(
@@ -1147,7 +1147,7 @@ class _SellerProfileState extends State<SellerProfile>
                                       .fontColor
                                       .withOpacity(0.6),
                               fontSize: textFontSize16,
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                           ),
                           Radio<int>(
@@ -1285,7 +1285,7 @@ class _SellerProfileState extends State<SellerProfile>
                         fontWeight: FontWeight.w500,
                         fontStyle: FontStyle.normal,
                         fontSize: textFontSize12,
-                        fontFamily: 'ubuntu',
+                        fontFamily: 'Tajawal',
                       ),
                       textAlign: TextAlign.start,
                     ),
@@ -1320,7 +1320,7 @@ class _SellerProfileState extends State<SellerProfile>
                         fontWeight: FontWeight.w500,
                         fontStyle: FontStyle.normal,
                         fontSize: textFontSize12,
-                        fontFamily: 'ubuntu',
+                        fontFamily: 'Tajawal',
                       ),
                       textAlign: TextAlign.start,
                     ),
@@ -1461,7 +1461,7 @@ class _SellerProfileState extends State<SellerProfile>
                       getTranslated(context, 'FILTER'),
                       style: TextStyle(
                         color: Theme.of(context).colorScheme.fontColor,
-                        fontFamily: 'ubuntu',
+                        fontFamily: 'Tajawal',
                       ),
                     ),
                     centerTitle: true,
@@ -1523,7 +1523,7 @@ class _SellerProfileState extends State<SellerProfile>
                                                         .lightBlack,
                                                     fontWeight:
                                                         FontWeight.normal,
-                                                    fontFamily: 'ubuntu',
+                                                    fontFamily: 'Tajawal',
                                                   ),
                                               overflow: TextOverflow.ellipsis,
                                               maxLines: 2,
@@ -1606,7 +1606,7 @@ class _SellerProfileState extends State<SellerProfile>
                                               : Theme.of(context)
                                                   .colorScheme
                                                   .fontColor,
-                                          fontFamily: 'ubuntu',
+                                          fontFamily: 'Tajawal',
                                         ),
                                       ),
                                     );
@@ -1660,7 +1660,7 @@ class _SellerProfileState extends State<SellerProfile>
                                                       .colorScheme
                                                       .fontColor,
                                                   fontWeight: FontWeight.normal,
-                                                  fontFamily: 'ubuntu',
+                                                  fontFamily: 'Tajawal',
                                                 ),
                                             overflow: TextOverflow.ellipsis,
                                             maxLines: 2,
@@ -1732,7 +1732,7 @@ class _SellerProfileState extends State<SellerProfile>
                           child: Text(
                             getTranslated(context, 'DISCARD'),
                             style: const TextStyle(
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                           ),
                         ),

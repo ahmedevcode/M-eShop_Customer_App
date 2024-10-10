@@ -1521,7 +1521,7 @@ class _SearchState extends State<Search> with TickerProviderStateMixin {
                 color: Theme.of(context).colorScheme.fontColor,
                 fontWeight: FontWeight.bold,
                 fontSize: textFontSize16,
-                fontFamily: 'ubuntu',
+                fontFamily: 'Tajawal',
               ),
               textAlign: TextAlign.center,
             ),
@@ -1576,7 +1576,7 @@ class _SearchState extends State<Search> with TickerProviderStateMixin {
                                 .copyWith(
                                     color:
                                         Theme.of(context).colorScheme.fontColor,
-                                    fontFamily: 'ubuntu',
+                                    fontFamily: 'Tajawal',
                                     fontWeight: FontWeight.bold),
                           )
                         : Text(
@@ -1588,7 +1588,7 @@ class _SearchState extends State<Search> with TickerProviderStateMixin {
                                   color:
                                       Theme.of(context).colorScheme.fontColor,
                                   fontWeight: FontWeight.bold,
-                                  fontFamily: 'ubuntu',
+                                  fontFamily: 'Tajawal',
                                 ),
                           ),
                   ),
@@ -1634,7 +1634,7 @@ class _SuggestionList extends StatelessWidget {
             style: Theme.of(context).textTheme.titleSmall!.copyWith(
                   color: Theme.of(context).colorScheme.fontColor,
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'ubuntu',
+                  fontFamily: 'Tajawal',
                 ),
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
@@ -1646,7 +1646,7 @@ class _SuggestionList extends StatelessWidget {
                   '${getTranslated(context, 'IN')} ${suggestion.catName!}',
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.fontColor,
-                    fontFamily: 'ubuntu',
+                    fontFamily: 'Tajawal',
                   ),
                 ),
           trailing: textController!.text.toString().trim().isEmpty ||

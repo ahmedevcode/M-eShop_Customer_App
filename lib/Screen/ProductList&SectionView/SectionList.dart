@@ -435,7 +435,7 @@ class StateSection extends State<SectionList> with TickerProviderStateMixin {
                             style: TextStyle(
                               color: Theme.of(context).colorScheme.fontColor,
                               fontSize: textFontSize18,
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                           ),
                           IconButton(
@@ -476,7 +476,7 @@ class StateSection extends State<SectionList> with TickerProviderStateMixin {
                                       .fontColor
                                       .withOpacity(0.6),
                               fontSize: textFontSize16,
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                           ),
                           Radio<int>(
@@ -519,7 +519,7 @@ class StateSection extends State<SectionList> with TickerProviderStateMixin {
                                           .fontColor
                                           .withOpacity(0.6),
                               fontSize: textFontSize16,
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                           ),
                           Radio<int>(
@@ -563,7 +563,7 @@ class StateSection extends State<SectionList> with TickerProviderStateMixin {
                                           .fontColor
                                           .withOpacity(0.6),
                               fontSize: textFontSize16,
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                           ),
                           Radio<int>(
@@ -604,7 +604,7 @@ class StateSection extends State<SectionList> with TickerProviderStateMixin {
                                       .fontColor
                                       .withOpacity(0.6),
                               fontSize: textFontSize16,
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                           ),
                           Radio<int>(
@@ -647,7 +647,7 @@ class StateSection extends State<SectionList> with TickerProviderStateMixin {
                                       .fontColor
                                       .withOpacity(0.6),
                               fontSize: textFontSize16,
-                              fontFamily: 'ubuntu',
+                              fontFamily: 'Tajawal',
                             ),
                           ),
                           Radio<int>(
@@ -1227,7 +1227,7 @@ class StateSection extends State<SectionList> with TickerProviderStateMixin {
                           fontWeight: FontWeight.w500,
                           fontStyle: FontStyle.normal,
                           fontSize: textFontSize12,
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                         ),
                         textAlign: TextAlign.start,
                       ),
@@ -1262,7 +1262,7 @@ class StateSection extends State<SectionList> with TickerProviderStateMixin {
                           fontWeight: FontWeight.w500,
                           fontStyle: FontStyle.normal,
                           fontSize: textFontSize12,
-                          fontFamily: 'ubuntu',
+                          fontFamily: 'Tajawal',
                         ),
                         textAlign: TextAlign.start,
                       ),

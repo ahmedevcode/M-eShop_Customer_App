@@ -195,7 +195,7 @@ class _MapState extends State<Map> {
                                 style: TextStyle(
                                   color: Theme.of(context).colorScheme.white,
                                   fontSize: textFontSize16,
-                                  fontFamily: 'ubuntu',
+                                  fontFamily: 'Tajawal',
                                 ),
                               ),
                             ),
